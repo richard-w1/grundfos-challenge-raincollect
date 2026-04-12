@@ -1,4 +1,4 @@
-RainUSE Nexus
+RainCollect
 Product Requirements Document  •  Hackathon Edition  •  v1.0
 
 
@@ -28,7 +28,7 @@ No way to validate estimated catchment against real measured flow
 Result: High cost per qualified lead, long sales cycles, deals that stall at the ROI question.
 
 
-2. Solution Overview — The RainUSE Nexus
+2. Solution Overview — RainCollect
 
 
 A two-phase web-based prospecting engine that moves from satellite estimate to field-validated ROI proof.

@@ -1,4 +1,4 @@
-# RainUSE Nexus
+# RainCollect
 
 A commercial building prospecting engine for Grundfos water reuse systems. The app identifies high-value buildings across US cities by combining satellite imagery analysis, financial data, and regulatory signals into a single Viability Score surfaced through an interactive map.
 
@@ -18,7 +18,7 @@ Built for the Grundfos Challenge.
 ## Project structure
 
 ```
-rainuse-nexus/        React web app (Vite)
+rainuse-nexus/        RainCollect web app (Vite)
 tower_server.py       TowerScout CV microservice (Flask)
 generate_dallas_towers.py   Runs the CV pipeline against Dallas buildings
 towerscout_train.py   YOLOv5 training script (Colab)

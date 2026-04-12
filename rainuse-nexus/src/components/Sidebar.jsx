@@ -139,7 +139,7 @@ function BuildingDetail({ building, cityMeta }) {
     setRevGeoLoading(true)
     fetch(
       `https://nominatim.openstreetmap.org/reverse?lat=${center.lat}&lon=${center.lon}&format=json`,
-      { signal: ctrl.signal, headers: { 'User-Agent': 'RainUSE-Nexus/1.0', 'Accept-Language': 'en' } },
+      { signal: ctrl.signal, headers: { 'User-Agent': 'RainCollect/1.0', 'Accept-Language': 'en' } },
     )
       .then((r) => r.json())
       .then((data) => {

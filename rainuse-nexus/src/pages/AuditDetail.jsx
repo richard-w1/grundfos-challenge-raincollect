@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { Group, Text, Badge, Button, Breadcrumbs, Anchor, ThemeIcon, Loader, Modal, ActionIcon, Tooltip, Divider } from '@mantine/core'
+import { Group, Text, Button, Breadcrumbs, Anchor, ThemeIcon, Loader, Modal, ActionIcon, Tooltip, Divider } from '@mantine/core'
 import { IconDroplet, IconArrowLeft, IconDatabase, IconAdjustments } from '@tabler/icons-react'
 import { useStore } from '../store'
 import MapView from '../components/Map'
@@ -102,29 +102,6 @@ export default function AuditDetail() {
               <Breadcrumbs mr="md">
                 <Text size="sm" fw={500}>{audit?.label ?? regionId}</Text>
               </Breadcrumbs>
-              <Badge size="sm" variant="dot" color="blue">
-                {audit.avg_precip_inches}&quot; avg rain/yr
-              </Badge>
-              <Badge size="sm" variant="dot" color="teal">
-                ${audit.total_water_cost_per_kgal ?? audit.water_cost_per_kgal}/kgal{audit.total_water_cost_per_kgal ? ' total water' : ' water'}
-              </Badge>
-              <Badge size="sm" variant="dot" color="yellow">
-                Min {((audit.minRoofSqft ?? 100000) / 1000).toFixed(0)}k sqft
-              </Badge>
-              {audit.water_stress && (
-                <Badge
-                  size="sm"
-                  variant="dot"
-                  color={
-                    audit.water_stress === 'Extremely High' ? 'red' :
-                    audit.water_stress === 'High' ? 'orange' :
-                    audit.water_stress === 'Medium-High' ? 'yellow' : 'green'
-                  }
-                >
-                  Water Stress: {audit.water_stress}
-                </Badge>
-              )}
-              {isCustom && <Badge size="sm" variant="light" color="violet">Custom Audit</Badge>}
               <Divider orientation="vertical" mx="sm" />
               <Group gap="xs">
                 <Tooltip label="Audit Details & Sources">

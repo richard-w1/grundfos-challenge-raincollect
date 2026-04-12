@@ -190,7 +190,7 @@ export function computeViability(areaSqft, avgPrecip, totalWaterCost, buildingTy
 export async function geocodeLocation(query) {
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=us&addressdetails=1`
   const res = await fetch(url, {
-    headers: { 'Accept-Language': 'en', 'User-Agent': 'RainUSE-Nexus/1.0' },
+    headers: { 'Accept-Language': 'en', 'User-Agent': 'RainCollect/1.0' },
   })
   if (!res.ok) throw new Error(`Nominatim error: ${res.status}`)
   const data = await res.json()

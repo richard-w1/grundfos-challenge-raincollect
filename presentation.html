@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>RainUSE Nexus — Grundfos Challenge</title>
+<title>RainCollect — Grundfos Challenge</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -189,6 +189,45 @@
   .slide-hero .pane.content { background: var(--bg); }
   .slide-hero .pane.photo { width: 45%; }
 
+  /* ── Model / diagram figures ── */
+  .pane.photo.diagram img {
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    background: var(--surface);
+    filter: none;
+  }
+  .slide-figure {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 52px 72px 88px;
+    gap: 18px;
+    overflow: auto;
+  }
+  .slide-figure .figure-wrap {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide-figure img {
+    max-width: 100%;
+    max-height: min(72vh, 820px);
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .slide-figure .figure-caption {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 900px;
+  }
+
   .slide-closing {
     flex-direction: column;
     align-items: flex-start;
@@ -213,17 +252,16 @@
 <!-- ───────────────────────────────────── 1. HERO ── -->
 <div class="slide slide-hero split">
   <div class="pane content">
-    <div class="eyebrow">Grundfos Innovation Challenge 2025</div>
-    <h1>RainUSE<br/>Nexus</h1>
+    <div class="eyebrow"></div>
+    <h1>RainCollect</h1>
     <div class="rule"></div>
     <p style="font-size:18px; max-width:480px; color:var(--text);">
-      An automated prospecting engine that uses satellite imagery,
-      deep learning, and open financial data to surface the highest-value
+      An tool that uses satellite imagery,
+      deep learning, and open financial data to surface
       opportunities for Grundfos water reuse systems.
     </p>
     <p style="margin-top:20px; font-size:14px;">
-      Computer vision &nbsp;·&nbsp; Open data APIs &nbsp;·&nbsp;
-      Live scoring &nbsp;·&nbsp; 10 pre-loaded US cities
+      Richard Wang &nbsp;·&nbsp; Allison Neely &nbsp;
     </p>
   </div>
   <div class="pane photo">
@@ -240,63 +278,16 @@
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">The Problem</div>
-    <h2 style="max-width:640px;">Finding the right building is done<br/>manually — and it takes days.</h2>
+    <h2 style="max-width:640px;">Finding the right building is difficult and time consuming.</h2>
     <div class="rule"></div>
     <div class="two-col">
       <div>
-        <p style="margin-bottom:20px;">
-          A Grundfos sales rep today spends roughly <strong>three days per prospect</strong>:
-          measuring roof areas in satellite tools, cross-referencing utility bills,
-          checking cooling tower registries, and researching local incentives — one
-          building at a time. Most of those leads never convert.
-        </p>
-        <p>
-          The challenge states the problem directly: commercial buildings face rising
-          water costs, stricter regulation, and growing scarcity. Grundfos has the
-          technology to solve it. <strong>Identifying the right target at the right time
-          is the unsolved problem.</strong>
-        </p>
-      </div>
-      <div>
-        <h3 style="margin-bottom:12px;">Three questions no tool answers today</h3>
+        <h3 style="margin-bottom:12px;"></h3>
         <ul>
           <li><strong>Physical:</strong> Is this roof large enough? Does it have a cooling tower that demands ongoing water treatment?</li>
           <li><strong>Financial:</strong> What do local utilities charge? Are there stormwater fees, tax credits, or rebates that change the ROI?</li>
           <li><strong>Priority:</strong> Out of thousands of commercial buildings in a city, which 50 should a rep call on this quarter?</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ───────────────────────────────────── 3. SOLUTION ── -->
-<div class="slide">
-  <div class="full-content" style="justify-content:center;">
-    <div class="eyebrow">The Solution</div>
-    <h2>A three-layer prospecting engine</h2>
-    <div class="rule"></div>
-    <div class="pipeline">
-      <div class="p-step">
-        <div class="p-num">01</div>
-        <div class="p-body">
-          <h3>See the physical world</h3>
-          <p>Pull building footprints from OpenStreetMap and compute roof area using the Shoelace formula on GPS polygon coordinates. Run the CDC TowerScout deep learning pipeline — YOLOv5 then EfficientNet-B5 — on Google Maps satellite tiles to detect cooling towers with bounding-box precision.</p>
-        </div>
-      </div>
-      <div class="p-step">
-        <div class="p-num">02</div>
-        <div class="p-body">
-          <h3>Cross-reference financial reality</h3>
-          <p>Pull five years of actual precipitation data from the Open-Meteo archive. Look up local water and sewer utility rates, stormwater fees, and tax incentives from a curated city and state reference dataset. Compute real dollar savings, not estimates.</p>
-        </div>
-      </div>
-      <div class="p-step">
-        <div class="p-num">03</div>
-        <div class="p-body">
-          <h3>Score, rank, and surface leads</h3>
-          <p>Combine all signals into a Viability Score (0–100) with adjustable component weights. The rep sees a live map: color equals opportunity. Click any building for ROI, estimated annual savings, catchment volume, and a direct link for field verification.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -312,7 +303,7 @@
     <div class="two-col">
       <div class="section-block">
         <div>
-          <h3>OpenStreetMap — Overpass API</h3>
+          <h3>OpenStreetMap and Overpass API</h3>
           <p>Building footprints as GPS polygon geometries. Queryable live from the browser with no API key. Provides roof geometry, building type, floor count, and contact tags used throughout the scoring formula.</p>
         </div>
         <div>
@@ -334,7 +325,7 @@
           <p>Per-city stormwater fees in dollars per square foot per year, state tax credits, and rebate programs. Researched from TCEQ, DSIRE, and municipal open data portals and stored in a curated reference file.</p>
         </div>
         <div>
-          <h3>WRI Aqueduct — Water Stress Index</h3>
+          <h3>WRI Aqueduct and Water Stress Index</h3>
           <p>City-level water stress scores on a 0–5 scale. Used in the ESG sub-score to quantify supply risk. Cities like Phoenix score high, raising the strategic value of any conservation measure installed there.</p>
         </div>
       </div>
@@ -434,55 +425,64 @@
       </div>
     </div>
   </div>
-  <div class="pane photo" style="width:38%;">
+  <div class="pane photo diagram" style="width:46%;">
     <img
-      src="https://images.unsplash.com/photo-1518623001395-125242310d0c?w=900&q=80"
-      alt="Industrial rooftop with cooling equipment"
+      src="detectionworkflow.png"
+      alt="Two-stage pipeline: YOLOv5 detects candidate cooling towers on map tiles; indeterminate crops are classified with EfficientNet-b5"
     />
-    <span class="photo-credit">Unsplash</span>
   </div>
 </div>
 
 
-<!-- ───────────────────────────────────── 7. WHY RETRAIN ── -->
+<!-- ───────────────────────────────────── 7. MODEL VS SATELLITE ── -->
+<div class="slide slide-figure">
+  <div class="eyebrow">Computer Vision — TowerScout</div>
+  <h2 style="max-width:720px;">From satellite imagery to structured detections</h2>
+  <div class="rule"></div>
+  <div class="figure-wrap">
+    <img
+      src="modelvssatelliteimages.png"
+      alt="Side by side: simplified model map output with detection markers versus the same area on Google Maps satellite imagery"
+    />
+  </div>
+  <p class="figure-caption">
+    The model turns imagery into building geometry and point detections,
+    aligned with satellite imagery for verification.
+    Model limitations include roofs with complex shadows and fans that point to the side.
+  </p>
+</div>
+
+<!-- ───────────────────────────────────── 9. WHY RETRAIN ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
-    <div class="eyebrow">Computer Vision — Training</div>
-    <h2>Why we retrained the model from scratch</h2>
+    <div class="eyebrow">Computer Vision Training</div>
+    <h2>Model Training</h2>
     <div class="rule"></div>
     <div class="two-col">
       <div>
         <p style="margin-bottom:16px;">
-          The original TowerScout weights file linked in the CDC GitHub repository
-          was hosted on a dead Google Drive URL. We had the training notebook and
+          We had the training notebook and
           the Roboflow dataset URLs cited in the paper.
         </p>
         <p style="margin-bottom:16px;">
-          We reproduced the exact training setup on Google Colab: YOLOv5x backbone,
+          We reproduced the training setup on Google Colab: YOLOv5x backbone,
           batch size 16, 100 epochs, 640px image resolution, using three merged
           Roboflow datasets covering New York City, Philadelphia, and New York State.
         </p>
         <p>
           The resulting weights match the published architecture and produce
-          detection results consistent with the paper's reported performance —
+          detection results consistent with the paper's reported performance.
           95.1% sensitivity and 90.1% positive predictive value.
         </p>
       </div>
       <div>
-        <h3 style="margin-bottom:16px;">Obstacles encountered and resolved</h3>
-        <ul>
-          <li>PyTorch 2.6 changed the default for <code>torch.load</code> to weights-only mode, breaking the original checkpoint loading code. Fixed with an explicit flag.</li>
-          <li>Colab's CUDA-enabled PyTorch was overwritten by the YOLOv5 requirements file. Fixed by filtering out torch, torchvision, and torchaudio before installation.</li>
-          <li>One Roboflow dataset link (vegas synthetic) was dead. Skipped with graceful fallback; the other three datasets provided sufficient training data.</li>
-          <li>Windows path serialization in the checkpoint caused a PosixPath unpickling error on load. Patched in tower_server.py before calling torch.hub.load.</li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- ───────────────────────────────────── 8. TECH STACK ── -->
+<!-- ───────────────────────────────────── 10. TECH STACK ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">Technology Stack</div>
@@ -533,7 +533,7 @@
 </div>
 
 
-<!-- ───────────────────────────────────── 9. APP WALKTHROUGH ── -->
+<!-- ───────────────────────────────────── 11. APP WALKTHROUGH ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">Product</div>
@@ -573,7 +573,7 @@
 </div>
 
 
-<!-- ───────────────────────────────────── 10. DESIGN DECISIONS ── -->
+<!-- ───────────────────────────────────── 12. DESIGN DECISIONS ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">Design Decisions</div>
@@ -601,7 +601,7 @@
 </div>
 
 
-<!-- ───────────────────────────────────── 11. IMPACT ── -->
+<!-- ───────────────────────────────────── 13. IMPACT ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">Business Impact</div>
@@ -648,7 +648,7 @@
 </div>
 
 
-<!-- ───────────────────────────────────── 12. DEMO SCRIPT ── -->
+<!-- ───────────────────────────────────── 14. DEMO SCRIPT ── -->
 <div class="slide">
   <div class="full-content" style="justify-content:center;">
     <div class="eyebrow">Demo — 5 Minutes</div>
@@ -694,7 +694,7 @@
         <div class="demo-time">4:15</div>
         <div class="demo-body">
           <h3>The close</h3>
-          <p>"Satellite finds the prospect. The score proves the ROI. That is the number a CFO will sign off on. This is RainUSE Nexus."</p>
+          <p>"Satellite finds the prospect. The score proves the ROI. That is the number a CFO will sign off on. This is RainCollect."</p>
         </div>
       </div>
     </div>
@@ -702,10 +702,10 @@
 </div>
 
 
-<!-- ───────────────────────────────────── 13. CLOSING ── -->
+<!-- ───────────────────────────────────── 15. CLOSING ── -->
 <div class="slide slide-closing">
   <div class="eyebrow" style="color:var(--muted);">Grundfos Innovation Challenge 2025</div>
-  <h1 style="margin-top:16px; font-size:64px;">RainUSE Nexus</h1>
+  <h1 style="margin-top:16px; font-size:64px;">RainCollect</h1>
   <div class="rule"></div>
   <p style="font-size:20px; color:var(--text); max-width:560px; line-height:1.6; margin-bottom:28px;">
     "There is a possibility in every drop."
@@ -728,7 +728,7 @@
 <div id="nav">
   <button id="prev">&#8592;</button>
   <div id="pips"></div>
-  <span id="counter">1 / 13</span>
+  <span id="counter">1 / 15</span>
   <button id="next">&#8594;</button>
 </div>
 
@@ -737,6 +737,7 @@
   const pipsEl = document.getElementById('pips')
   const counter = document.getElementById('counter')
   let current = 0
+  counter.textContent = `1 / ${slides.length}`
 
   slides.forEach((_, i) => {
     const p = document.createElement('div')

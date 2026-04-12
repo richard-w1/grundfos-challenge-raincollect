@@ -1,4 +1,4 @@
-RainUSE Nexus
+RainCollect
 Implementation Plan  •  25-Hour Sprint  •  v1.0
 
 
@@ -191,4 +191,4 @@ Demo Script Outline (5 Minutes)
 (2:15–2:45) Score tuning — Move the water cost slider up. 'Philadelphia has 3× the water cost — watch what happens.' Scores reprioritize live.
 (2:45–3:15) Permit layer — Toggle on. 'These amber outlines don't exist yet. We're in the room when they're designing the mechanical room.'
 (3:15–4:15) Phase 2 — Switch to sensor tab. Pi is running. Live chart shows real L/min vs. estimate. 'The estimate said 12.3 GPM. The sensor says 11.8. A 4% delta. Every deployment makes our model smarter.'
-(4:15–5:00) Close — 'Satellite finds the prospect. Sensor proves the ROI. That's the number a CFO will sign off on. This is RainUSE Nexus.'
+(4:15–5:00) Close — 'Satellite finds the prospect. Sensor proves the ROI. That's the number a CFO will sign off on. This is RainCollect.'
