@@ -1,0 +1,15 @@
+# TowerScout microservice — tower_server.py
+# Install with: pip install -r requirements_towerscout.txt
+#
+# Note: if you have a CUDA-enabled PyTorch already installed (e.g. Google Colab
+# or a local GPU env), install torch/torchvision separately first to preserve
+# your CUDA build, then run this file with --no-deps for the remaining packages.
+flask
+flask-cors
+requests
+Pillow
+python-dotenv
+torch
+torchvision
+efficientnet_pytorch
+yolov5

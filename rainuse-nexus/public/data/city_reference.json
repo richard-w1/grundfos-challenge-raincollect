@@ -1,0 +1,162 @@
+{
+  "Tyler, TX": {
+    "state": "TX",
+    "water_cost_per_kgal": 4.65,
+    "sewer_cost_per_kgal": 4.15,
+    "stormwater_fee_per_sqft_yr": 0.00,
+    "incentives": {
+      "tax_credit_notes": "Texas Tax Code §11.31 — Pollution Control Property exemption applies.",
+      "legal_link": "https://codes.findlaw.com/tx/tax-code/tax-sect-11-31/"
+    },
+    "esg_climate": {
+      "water_stress_score": 2.5,
+      "regulatory_pressure": 2
+    },
+    "data_sources": {
+      "utility_rates": "https://www.cityoftyler.org/government/departments/tyler-water-utilities/water-business-office/rates-and-fees",
+      "climate_risk": "https://www.wri.org/data/aqueduct-global-maps-30-data"
+    }
+  },
+  "Dallas, TX": {
+    "state": "TX",
+    "water_cost_per_kgal": 4.12,
+    "sewer_cost_per_kgal": 6.38,
+    "stormwater_fee_per_sqft_yr": 0.082,
+    "incentives": {
+      "tax_credit_notes": "Texas Tax Code §11.31 compliant.",
+      "legal_link": "https://codes.findlaw.com/tx/tax-code/tax-sect-11-31/"
+    },
+    "esg_climate": {
+      "water_stress_score": 3.5,
+      "regulatory_pressure": 3
+    },
+    "data_sources": {
+      "utility_rates": "https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Fee-and-Rate-Adjustments-in-the-FY-2025-26-Budget.pdf",
+      "esg_proxy": "https://www.sbtiservices.com/"
+    }
+  },
+  "Austin, TX": {
+    "state": "TX",
+    "water_cost_per_kgal": 11.62,
+    "sewer_cost_per_kgal": 9.15,
+    "stormwater_fee_per_sqft_yr": 0.125,
+    "incentives": {
+      "rebate_usd": 5000,
+      "rebate_notes": "Austin Water 'Bucks for Business' program.",
+      "legal_link": "https://www.austintexas.gov/department/water-conservation-rebates"
+    },
+    "esg_climate": {
+      "water_stress_score": 3.8,
+      "regulatory_pressure": 4
+    },
+    "data_sources": {
+      "utility_rates": "https://services.austintexas.gov/edims/document.cfm?id=456500",
+      "leed_data": "https://www.usgbc.org/projects"
+    }
+  },
+  "Philadelphia, PA": {
+    "state": "PA",
+    "water_cost_per_kgal": 9.52,
+    "sewer_cost_per_kgal": 6.22,
+    "stormwater_fee_per_sqft_yr": 0.158,
+    "incentives": {
+      "stormwater_notes": "Significant credits available via SMARTR program for green infrastructure.",
+      "legal_link": "https://water.phila.gov/development/stormwater/credits/"
+    },
+    "esg_climate": {
+      "water_stress_score": 1.5,
+      "regulatory_pressure": 5
+    },
+    "data_sources": {
+      "utility_rates": "https://water.phila.gov/drops/new-rate-information-effective-september-2025/",
+      "regulatory_mandate": "https://www.epa.gov/enforcement/combined-sewer-overflow-cso-consent-decrees"
+    }
+  },
+  "Los Angeles, CA": {
+    "state": "CA",
+    "water_cost_per_kgal": 10.25,
+    "sewer_cost_per_kgal": 7.55,
+    "stormwater_fee_per_sqft_yr": 0.025,
+    "incentives": {
+      "tax_credit_notes": "CA RTC §73 exclusion for rainwater capture equipment.",
+      "legal_link": "https://codes.findlaw.com/ca/revenue-and-taxation-code/rtc-sect-73/"
+    },
+    "esg_climate": {
+      "water_stress_score": 4.8,
+      "regulatory_pressure": 5
+    },
+    "data_sources": {
+      "utility_rates": "https://www.ladwp.com/sites/default/files/2025-07/2025-2026%20Schedule%20for%20Water%20Facility%20Charges_0.pdf",
+      "stormwater_measure": "https://safecleanwaterla.org/"
+    }
+  },
+  "Phoenix, AZ": {
+    "state": "AZ",
+    "water_cost_per_kgal": 5.45,
+    "sewer_cost_per_kgal": 4.95,
+    "stormwater_fee_per_sqft_yr": 0.035,
+    "esg_climate": {
+      "water_stress_score": 4.9,
+      "regulatory_pressure": 4,
+      "sec_10k_risk": "Supply chain interruption from Colorado River allocation cuts."
+    },
+    "data_sources": {
+      "utility_rates": "https://www.phoenix.gov/content/dam/phoenix/budgetsite/budget-books/2025-26-Summary-Budget-Book.pdf",
+      "drought_monitor": "https://droughtmonitor.unl.edu/"
+    }
+  },
+  "Miami, FL": {
+    "state": "FL",
+    "water_cost_per_kgal": 3.95,
+    "sewer_cost_per_kgal": 4.65,
+    "stormwater_fee_per_sqft_yr": 0.075,
+    "esg_climate": {
+      "water_stress_score": 1.8,
+      "regulatory_pressure": 4,
+      "sec_10k_risk": "Saltwater intrusion into Biscayne Aquifer impacting long-term supply costs."
+    },
+    "data_sources": {
+      "utility_rates": "https://www.miami.gov/Notices/News-Notices/Notice-Regarding-Stormwater-Utility-Fee",
+      "infrastructure_plan": "https://www.miamidade.gov/resources/budget/adopted/fy2025-26/water-and-sewer.pdf"
+    }
+  },
+  "Denver, CO": {
+    "state": "CO",
+    "water_cost_per_kgal": 6.35,
+    "sewer_cost_per_kgal": 6.12,
+    "stormwater_fee_per_sqft_yr": 0.155,
+    "esg_climate": {
+      "water_stress_score": 3.8,
+      "regulatory_pressure": 4
+    },
+    "data_sources": {
+      "utility_rates": "https://www.denverwater.org/business/billing-and-rates/2026-rates"
+    }
+  },
+  "Atlanta, GA": {
+    "state": "GA",
+    "water_cost_per_kgal": 8.75,
+    "sewer_cost_per_kgal": 14.55,
+    "stormwater_fee_per_sqft_yr": 0.055,
+    "esg_climate": {
+      "water_stress_score": 2.8,
+      "regulatory_pressure": 5
+    },
+    "data_sources": {
+      "utility_rates": "https://atlantawatershed.org/waterrates/"
+    }
+  },
+  "Seattle, WA": {
+    "state": "WA",
+    "water_cost_per_kgal": 7.95,
+    "sewer_cost_per_kgal": 17.25,
+    "stormwater_fee_per_sqft_yr": 0.195,
+    "esg_climate": {
+      "water_stress_score": 1.2,
+      "regulatory_pressure": 5
+    },
+    "data_sources": {
+      "utility_rates": "https://seattle.gov/documents/Departments/SPU/AboutUs/Plans/SBP/CRP/SBP-FinancialAppendixFinal.pdf"
+    }
+  }
+}

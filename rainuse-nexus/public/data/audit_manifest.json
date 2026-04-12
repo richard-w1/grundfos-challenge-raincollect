@@ -1,0 +1,354 @@
+{
+  "audits": [
+    {
+      "id": "dallas",
+      "label": "Dallas, TX",
+      "state": "TX",
+      "building_count": 500,
+      "bbox": [-96.997, 32.5767, -96.597, 32.9767],
+      "center": { "longitude": -96.797, "latitude": 32.7767, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 57.0,
+      "water_cost_per_kgal": 4.12,
+      "sewer_cost_per_kgal": 6.38,
+      "total_water_cost_per_kgal": 10.50,
+      "gallons_per_sqft_per_year": 35.511,
+      "stormwater_fee_per_sqft_yr": 0.082,
+      "water_stress_score": 3.5,
+      "water_stress": "High",
+      "esg_climate": {
+        "water_stress_score": 3.5,
+        "regulatory_pressure": 3
+      },
+      "incentives": {
+        "tax_credit": true,
+        "tax_credit_notes": "Texas Tax Code §11.31 — Pollution Control Property exemption applies.",
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.082,
+        "rebate_usd": 0,
+        "legal_link": "https://codes.findlaw.com/tx/tax-code/tax-sect-11-31/"
+      },
+      "data_sources": {
+        "utility_rates": "https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Fee-and-Rate-Adjustments-in-the-FY-2025-26-Budget.pdf",
+        "esg_proxy": "https://www.sbtiservices.com/"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "austin",
+      "label": "Austin, TX",
+      "state": "TX",
+      "building_count": 500,
+      "bbox": [-97.9431, 30.0672, -97.5431, 30.4672],
+      "center": { "longitude": -97.7431, "latitude": 30.2672, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 47.6,
+      "water_cost_per_kgal": 11.62,
+      "sewer_cost_per_kgal": 9.15,
+      "total_water_cost_per_kgal": 20.77,
+      "gallons_per_sqft_per_year": 29.655,
+      "stormwater_fee_per_sqft_yr": 0.125,
+      "water_stress_score": 3.8,
+      "water_stress": "High",
+      "esg_climate": {
+        "water_stress_score": 3.8,
+        "regulatory_pressure": 4
+      },
+      "incentives": {
+        "tax_credit": true,
+        "tax_credit_notes": "Texas Tax Code §11.31 — Pollution Control Property exemption applies.",
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.125,
+        "rebate_usd": 5000,
+        "rebate_notes": "Austin Water 'Bucks for Business' rebate program.",
+        "legal_link": "https://www.austintexas.gov/department/water-conservation-rebates"
+      },
+      "data_sources": {
+        "utility_rates": "https://services.austintexas.gov/edims/document.cfm?id=456500",
+        "leed_data": "https://www.usgbc.org/projects"
+      },
+      "socrata_endpoint": "https://data.austintexas.gov/resource/3syk-w9eu.json",
+      "socrata_filter": "$where=square_feet>50000 AND permit_type_desc like '%COMMERCIAL%'"
+    },
+    {
+      "id": "philadelphia",
+      "label": "Philadelphia, PA",
+      "state": "PA",
+      "building_count": 500,
+      "bbox": [-75.3652, 39.7526, -74.9652, 40.1526],
+      "center": { "longitude": -75.1652, "latitude": 39.9526, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 49.9,
+      "water_cost_per_kgal": 9.52,
+      "sewer_cost_per_kgal": 6.22,
+      "total_water_cost_per_kgal": 15.74,
+      "gallons_per_sqft_per_year": 31.088,
+      "stormwater_fee_per_sqft_yr": 0.158,
+      "water_stress_score": 1.5,
+      "water_stress": "Low-Medium",
+      "esg_climate": {
+        "water_stress_score": 1.5,
+        "regulatory_pressure": 5
+      },
+      "incentives": {
+        "tax_credit": true,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.158,
+        "stormwater_notes": "Significant credits available via SMARTR program for green infrastructure.",
+        "rebate_usd": 10000,
+        "legal_link": "https://water.phila.gov/development/stormwater/credits/"
+      },
+      "data_sources": {
+        "utility_rates": "https://water.phila.gov/drops/new-rate-information-effective-september-2025/",
+        "regulatory_mandate": "https://www.epa.gov/enforcement/combined-sewer-overflow-cso-consent-decrees"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "phoenix",
+      "label": "Phoenix, AZ",
+      "state": "AZ",
+      "building_count": 500,
+      "bbox": [-112.274, 33.2484, -111.874, 33.6484],
+      "center": { "longitude": -112.074, "latitude": 33.4484, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 13.1,
+      "water_cost_per_kgal": 5.45,
+      "sewer_cost_per_kgal": 4.95,
+      "total_water_cost_per_kgal": 10.40,
+      "gallons_per_sqft_per_year": 8.161,
+      "stormwater_fee_per_sqft_yr": 0.035,
+      "water_stress_score": 4.9,
+      "water_stress": "Extremely High",
+      "esg_climate": {
+        "water_stress_score": 4.9,
+        "regulatory_pressure": 4,
+        "sec_10k_risk": "Supply chain interruption from Colorado River allocation cuts."
+      },
+      "incentives": {
+        "tax_credit": false,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.035,
+        "rebate_usd": 500
+      },
+      "data_sources": {
+        "utility_rates": "https://www.phoenix.gov/content/dam/phoenix/budgetsite/budget-books/2025-26-Summary-Budget-Book.pdf",
+        "drought_monitor": "https://droughtmonitor.unl.edu/"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "miami",
+      "label": "Miami, FL",
+      "state": "FL",
+      "building_count": 500,
+      "bbox": [-80.3918, 25.5617, -79.9918, 25.9617],
+      "center": { "longitude": -80.1918, "latitude": 25.7617, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 63.3,
+      "water_cost_per_kgal": 3.95,
+      "sewer_cost_per_kgal": 4.65,
+      "total_water_cost_per_kgal": 8.60,
+      "gallons_per_sqft_per_year": 39.436,
+      "stormwater_fee_per_sqft_yr": 0.075,
+      "water_stress_score": 1.8,
+      "water_stress": "Low-Medium",
+      "esg_climate": {
+        "water_stress_score": 1.8,
+        "regulatory_pressure": 4,
+        "sec_10k_risk": "Saltwater intrusion into Biscayne Aquifer impacting long-term supply costs."
+      },
+      "incentives": {
+        "tax_credit": false,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.075,
+        "rebate_usd": 1500
+      },
+      "data_sources": {
+        "utility_rates": "https://www.miami.gov/Notices/News-Notices/Notice-Regarding-Stormwater-Utility-Fee",
+        "infrastructure_plan": "https://www.miamidade.gov/resources/budget/adopted/fy2025-26/water-and-sewer.pdf"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "tyler",
+      "label": "Tyler, TX",
+      "state": "TX",
+      "building_count": 64,
+      "bbox": [-95.4511, 32.2013, -95.1511, 32.5013],
+      "center": { "longitude": -95.3011, "latitude": 32.3513, "zoom": 12 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 49.7,
+      "water_cost_per_kgal": 4.65,
+      "sewer_cost_per_kgal": 4.15,
+      "total_water_cost_per_kgal": 8.80,
+      "gallons_per_sqft_per_year": 30.963,
+      "stormwater_fee_per_sqft_yr": 0.00,
+      "water_stress_score": 2.5,
+      "water_stress": "Medium-High",
+      "esg_climate": {
+        "water_stress_score": 2.5,
+        "regulatory_pressure": 2
+      },
+      "incentives": {
+        "tax_credit": true,
+        "tax_credit_notes": "Texas Tax Code §11.31 — Pollution Control Property exemption applies.",
+        "stormwater_fee": false,
+        "stormwater_fee_per_sqft_yr": 0.0,
+        "rebate_usd": 0,
+        "legal_link": "https://codes.findlaw.com/tx/tax-code/tax-sect-11-31/"
+      },
+      "data_sources": {
+        "utility_rates": "https://www.cityoftyler.org/government/departments/tyler-water-utilities/water-business-office/rates-and-fees",
+        "climate_risk": "https://www.wri.org/data/aqueduct-global-maps-30-data"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "denver",
+      "label": "Denver, CO",
+      "state": "CO",
+      "building_count": 460,
+      "bbox": [-105.1403, 39.5892, -104.8403, 39.8892],
+      "center": { "longitude": -104.9903, "latitude": 39.7392, "zoom": 12 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 16.2,
+      "water_cost_per_kgal": 6.35,
+      "sewer_cost_per_kgal": 6.12,
+      "total_water_cost_per_kgal": 12.47,
+      "gallons_per_sqft_per_year": 10.093,
+      "stormwater_fee_per_sqft_yr": 0.155,
+      "water_stress_score": 3.8,
+      "water_stress": "High",
+      "esg_climate": {
+        "water_stress_score": 3.8,
+        "regulatory_pressure": 4
+      },
+      "incentives": {
+        "tax_credit": true,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.155,
+        "rebate_usd": 3000
+      },
+      "data_sources": {
+        "utility_rates": "https://www.denverwater.org/business/billing-and-rates/2026-rates"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "atlanta",
+      "label": "Atlanta, GA",
+      "state": "GA",
+      "building_count": 500,
+      "bbox": [-84.538, 33.599, -84.238, 33.899],
+      "center": { "longitude": -84.388, "latitude": 33.749, "zoom": 12 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 65.3,
+      "water_cost_per_kgal": 8.75,
+      "sewer_cost_per_kgal": 14.55,
+      "total_water_cost_per_kgal": 23.30,
+      "gallons_per_sqft_per_year": 40.682,
+      "stormwater_fee_per_sqft_yr": 0.055,
+      "water_stress_score": 2.8,
+      "water_stress": "Medium-High",
+      "esg_climate": {
+        "water_stress_score": 2.8,
+        "regulatory_pressure": 5
+      },
+      "incentives": {
+        "tax_credit": false,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.055,
+        "rebate_usd": 0
+      },
+      "data_sources": {
+        "utility_rates": "https://atlantawatershed.org/waterrates/"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "seattle",
+      "label": "Seattle, WA",
+      "state": "WA",
+      "building_count": 133,
+      "bbox": [-122.4821, 47.4562, -122.1821, 47.7562],
+      "center": { "longitude": -122.3321, "latitude": 47.6062, "zoom": 12 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 44.5,
+      "water_cost_per_kgal": 7.95,
+      "sewer_cost_per_kgal": 17.25,
+      "total_water_cost_per_kgal": 25.20,
+      "gallons_per_sqft_per_year": 27.724,
+      "stormwater_fee_per_sqft_yr": 0.195,
+      "water_stress_score": 1.2,
+      "water_stress": "Low-Medium",
+      "esg_climate": {
+        "water_stress_score": 1.2,
+        "regulatory_pressure": 5
+      },
+      "incentives": {
+        "tax_credit": true,
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.195,
+        "rebate_usd": 2500
+      },
+      "data_sources": {
+        "utility_rates": "https://seattle.gov/documents/Departments/SPU/AboutUs/Plans/SBP/CRP/SBP-FinancialAppendixFinal.pdf"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    },
+    {
+      "id": "los_angeles",
+      "label": "Los Angeles, CA",
+      "state": "CA",
+      "building_count": 500,
+      "bbox": [-118.4437, 33.8522, -118.0437, 34.2522],
+      "center": { "longitude": -118.2437, "latitude": 34.0522, "zoom": 11 },
+      "auditedAt": "2026-04-12T00:00:00Z",
+      "minRoofSqft": 100000,
+      "avg_precip_inches": 19.4,
+      "water_cost_per_kgal": 10.25,
+      "sewer_cost_per_kgal": 7.55,
+      "total_water_cost_per_kgal": 17.80,
+      "gallons_per_sqft_per_year": 12.086,
+      "stormwater_fee_per_sqft_yr": 0.025,
+      "water_stress_score": 4.8,
+      "water_stress": "Extremely High",
+      "esg_climate": {
+        "water_stress_score": 4.8,
+        "regulatory_pressure": 5
+      },
+      "incentives": {
+        "tax_credit": true,
+        "tax_credit_notes": "CA RTC §73 exclusion for rainwater capture equipment.",
+        "stormwater_fee": true,
+        "stormwater_fee_per_sqft_yr": 0.025,
+        "rebate_usd": 5000,
+        "legal_link": "https://codes.findlaw.com/ca/revenue-and-taxation-code/rtc-sect-73/"
+      },
+      "data_sources": {
+        "utility_rates": "https://www.ladwp.com/sites/default/files/2025-07/2025-2026%20Schedule%20for%20Water%20Facility%20Charges_0.pdf",
+        "stormwater_measure": "https://safecleanwaterla.org/"
+      },
+      "socrata_endpoint": null,
+      "socrata_filter": null
+    }
+  ]
+}

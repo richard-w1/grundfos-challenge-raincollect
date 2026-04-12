@@ -1,0 +1,3731 @@
+{
+  "_meta": {
+    "source": "TowerScout YOLOv5 + EfficientNet-B5 two-stage pipeline (Wong et al., 2024)",
+    "pipeline": "yolov5+efficientnet",
+    "yolo_weights": "yolov5_best.pt",
+    "en_weights": "b5_unweighted_best.pt",
+    "zoom": 19,
+    "imagery": "Google Maps Static API (satellite)",
+    "conf_threshold": 0.35,
+    "yolo_min_conf": 0.25,
+    "yolo_max_conf": 0.65,
+    "detection_method": "per-building tile: YOLOv5 detects bounding boxes, EfficientNet confirms intermediate-confidence crops, tower lat/lon derived from bbox center",
+    "multiplier_formula": "final_score = base_score x (1.0 + confidence x 0.3)"
+  },
+  "dallas": [
+    {
+      "bbox": {
+        "x1": 0.0208,
+        "x2": 0.0436,
+        "y1": 0.286,
+        "y2": 0.3273
+      },
+      "confidence": 0.781,
+      "id": "ct-0001",
+      "lat": 32.868229,
+      "lon": -96.7742657,
+      "secondary_confidence": 1.0,
+      "source_building_id": "ea97bce7-5c33-456d-aeba-c9cb8692ec6c",
+      "yolo_confidence": 0.781
+    },
+    {
+      "bbox": {
+        "x1": 0.0036,
+        "x2": 0.0252,
+        "y1": 0.2869,
+        "y2": 0.3277
+      },
+      "confidence": 0.763,
+      "id": "ct-0002",
+      "lat": 32.8682281,
+      "lon": -96.7742963,
+      "secondary_confidence": 1.0,
+      "source_building_id": "ea97bce7-5c33-456d-aeba-c9cb8692ec6c",
+      "yolo_confidence": 0.763
+    },
+    {
+      "bbox": {
+        "x1": 0.8295,
+        "x2": 0.8451,
+        "y1": 0.5677,
+        "y2": 0.5824
+      },
+      "confidence": 0.393,
+      "id": "ct-0003",
+      "lat": 32.8678575,
+      "lon": -96.7728837,
+      "secondary_confidence": 0.393,
+      "source_building_id": "ea97bce7-5c33-456d-aeba-c9cb8692ec6c",
+      "yolo_confidence": 0.366
+    },
+    {
+      "bbox": {
+        "x1": 0.0686,
+        "x2": 0.0979,
+        "y1": 0.057,
+        "y2": 0.0889
+      },
+      "confidence": 0.732,
+      "id": "ct-0004",
+      "lat": 32.6919704,
+      "lon": -96.7657933,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b7806ac8-2694-4d30-9351-0f4b9824ef74",
+      "yolo_confidence": 0.732
+    },
+    {
+      "bbox": {
+        "x1": 0.0477,
+        "x2": 0.0773,
+        "y1": 0.069,
+        "y2": 0.1022
+      },
+      "confidence": 0.726,
+      "id": "ct-0005",
+      "lat": 32.6919529,
+      "lon": -96.7658289,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b7806ac8-2694-4d30-9351-0f4b9824ef74",
+      "yolo_confidence": 0.726
+    },
+    {
+      "bbox": {
+        "x1": 0.0582,
+        "x2": 0.0753,
+        "y1": 0.6953,
+        "y2": 0.7143
+      },
+      "confidence": 0.807,
+      "id": "ct-0006",
+      "lat": 32.6353087,
+      "lon": -96.7462821,
+      "secondary_confidence": 0.807,
+      "source_building_id": "3e79b4c5-bfbc-4774-9333-35df04fe1305",
+      "yolo_confidence": 0.279
+    },
+    {
+      "bbox": {
+        "x1": 0.1536,
+        "x2": 0.1962,
+        "y1": 0.5375,
+        "y2": 0.5589
+      },
+      "confidence": 0.669,
+      "id": "ct-0007",
+      "lat": 32.6266295,
+      "lon": -96.7494118,
+      "secondary_confidence": 0.669,
+      "source_building_id": "633d5989-8694-4014-80db-5c6d0d02eb52",
+      "yolo_confidence": 0.301
+    },
+    {
+      "bbox": {
+        "x1": 0.1097,
+        "x2": 0.1379,
+        "y1": 0.8415,
+        "y2": 0.8728
+      },
+      "confidence": 0.802,
+      "id": "ct-0008",
+      "lat": 32.6894114,
+      "lon": -96.8945665,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.802
+    },
+    {
+      "bbox": {
+        "x1": 0.1325,
+        "x2": 0.1602,
+        "y1": 0.8417,
+        "y2": 0.8738
+      },
+      "confidence": 0.786,
+      "id": "ct-0009",
+      "lat": 32.6894106,
+      "lon": -96.8945279,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.786
+    },
+    {
+      "bbox": {
+        "x1": 0.8753,
+        "x2": 0.8962,
+        "y1": 0.7122,
+        "y2": 0.7411
+      },
+      "confidence": 0.741,
+      "id": "ct-0010",
+      "lat": 32.6895923,
+      "lon": -96.8932587,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.741
+    },
+    {
+      "bbox": {
+        "x1": 0.8594,
+        "x2": 0.8797,
+        "y1": 0.7142,
+        "y2": 0.7417
+      },
+      "confidence": 0.649,
+      "id": "ct-0011",
+      "lat": 32.6895906,
+      "lon": -96.8932864,
+      "secondary_confidence": 0.649,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.603
+    },
+    {
+      "bbox": {
+        "x1": 0.8153,
+        "x2": 0.8351,
+        "y1": 0.7161,
+        "y2": 0.7418
+      },
+      "confidence": 0.704,
+      "id": "ct-0012",
+      "lat": 32.6895891,
+      "lon": -96.8933625,
+      "secondary_confidence": 0.704,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.552
+    },
+    {
+      "bbox": {
+        "x1": 0.3636,
+        "x2": 0.3804,
+        "y1": 0.3137,
+        "y2": 0.3299
+      },
+      "confidence": 0.372,
+      "id": "ct-0013",
+      "lat": 32.6901539,
+      "lon": -96.8941405,
+      "secondary_confidence": 0.372,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.443
+    },
+    {
+      "bbox": {
+        "x1": 0.8606,
+        "x2": 0.8805,
+        "y1": 0.7006,
+        "y2": 0.7312
+      },
+      "confidence": 0.735,
+      "id": "ct-0014",
+      "lat": 32.6896073,
+      "lon": -96.8932848,
+      "secondary_confidence": 0.735,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.383
+    },
+    {
+      "bbox": {
+        "x1": 0.83,
+        "x2": 0.8509,
+        "y1": 0.7137,
+        "y2": 0.7414
+      },
+      "confidence": 0.827,
+      "id": "ct-0015",
+      "lat": 32.6895911,
+      "lon": -96.8933364,
+      "secondary_confidence": 0.827,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.37
+    },
+    {
+      "bbox": {
+        "x1": 0.3706,
+        "x2": 0.3839,
+        "y1": 0.3125,
+        "y2": 0.3276
+      },
+      "confidence": 0.515,
+      "id": "ct-0016",
+      "lat": 32.6901563,
+      "lon": -96.8941315,
+      "secondary_confidence": 0.515,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.329
+    },
+    {
+      "bbox": {
+        "x1": 0.1505,
+        "x2": 0.164,
+        "y1": 0.7167,
+        "y2": 0.7317
+      },
+      "confidence": 0.665,
+      "id": "ct-0017",
+      "lat": 32.6895958,
+      "lon": -96.8945092,
+      "secondary_confidence": 0.665,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.329
+    },
+    {
+      "bbox": {
+        "x1": 0.8144,
+        "x2": 0.8333,
+        "y1": 0.7004,
+        "y2": 0.724
+      },
+      "confidence": 0.843,
+      "id": "ct-0018",
+      "lat": 32.6896124,
+      "lon": -96.8933649,
+      "secondary_confidence": 0.843,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.322
+    },
+    {
+      "bbox": {
+        "x1": 0.8443,
+        "x2": 0.8631,
+        "y1": 0.7007,
+        "y2": 0.7302
+      },
+      "confidence": 0.772,
+      "id": "ct-0019",
+      "lat": 32.6896079,
+      "lon": -96.8933137,
+      "secondary_confidence": 0.772,
+      "source_building_id": "b764232e-94f6-413a-aa04-17b3702c0440",
+      "yolo_confidence": 0.321
+    },
+    {
+      "bbox": {
+        "x1": 0.6572,
+        "x2": 0.6966,
+        "y1": 0.7049,
+        "y2": 0.7467
+      },
+      "confidence": 0.882,
+      "id": "ct-0020",
+      "lat": 32.8072488,
+      "lon": -96.6231042,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d9f7cb2-9c72-4588-81b5-794c514ba092",
+      "yolo_confidence": 0.882
+    },
+    {
+      "bbox": {
+        "x1": 0.639,
+        "x2": 0.6776,
+        "y1": 0.7204,
+        "y2": 0.7634
+      },
+      "confidence": 0.874,
+      "id": "ct-0021",
+      "lat": 32.8072265,
+      "lon": -96.6231361,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d9f7cb2-9c72-4588-81b5-794c514ba092",
+      "yolo_confidence": 0.874
+    },
+    {
+      "bbox": {
+        "x1": 0.6838,
+        "x2": 0.7235,
+        "y1": 0.6761,
+        "y2": 0.7186
+      },
+      "confidence": 0.804,
+      "id": "ct-0022",
+      "lat": 32.8072883,
+      "lon": -96.6230582,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d9f7cb2-9c72-4588-81b5-794c514ba092",
+      "yolo_confidence": 0.804
+    },
+    {
+      "bbox": {
+        "x1": 0.7359,
+        "x2": 0.7773,
+        "y1": 0.6291,
+        "y2": 0.675
+      },
+      "confidence": 0.796,
+      "id": "ct-0023",
+      "lat": 32.807351,
+      "lon": -96.6229673,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d9f7cb2-9c72-4588-81b5-794c514ba092",
+      "yolo_confidence": 0.796
+    },
+    {
+      "bbox": {
+        "x1": 0.7042,
+        "x2": 0.743,
+        "y1": 0.6613,
+        "y2": 0.7056
+      },
+      "confidence": 0.707,
+      "id": "ct-0024",
+      "lat": 32.8073076,
+      "lon": -96.623024,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d9f7cb2-9c72-4588-81b5-794c514ba092",
+      "yolo_confidence": 0.707
+    },
+    {
+      "bbox": {
+        "x1": 0.0935,
+        "x2": 0.1339,
+        "y1": 0.2987,
+        "y2": 0.3417
+      },
+      "confidence": 0.888,
+      "id": "ct-0025",
+      "lat": 32.8442843,
+      "lon": -96.8965,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b2223463-5997-40ed-bfed-10af65b08704",
+      "yolo_confidence": 0.888
+    },
+    {
+      "bbox": {
+        "x1": 0.6641,
+        "x2": 0.6965,
+        "y1": 0.7092,
+        "y2": 0.7396
+      },
+      "confidence": 0.833,
+      "id": "ct-0026",
+      "lat": 32.9118612,
+      "lon": -96.773233,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.833
+    },
+    {
+      "bbox": {
+        "x1": 0.2446,
+        "x2": 0.2972,
+        "y1": 0.1297,
+        "y2": 0.1689
+      },
+      "confidence": 0.83,
+      "id": "ct-0027",
+      "lat": 32.9126568,
+      "lon": -96.7739357,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.83
+    },
+    {
+      "bbox": {
+        "x1": 0.242,
+        "x2": 0.2858,
+        "y1": 0.2309,
+        "y2": 0.2647
+      },
+      "confidence": 0.798,
+      "id": "ct-0028",
+      "lat": 32.9125206,
+      "lon": -96.7739477,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.798
+    },
+    {
+      "bbox": {
+        "x1": 0.7551,
+        "x2": 0.7948,
+        "y1": 0.6707,
+        "y2": 0.6984
+      },
+      "confidence": 0.796,
+      "id": "ct-0029",
+      "lat": 32.9119164,
+      "lon": -96.7730704,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.796
+    },
+    {
+      "bbox": {
+        "x1": 0.6634,
+        "x2": 0.6964,
+        "y1": 0.6804,
+        "y2": 0.7098
+      },
+      "confidence": 0.792,
+      "id": "ct-0030",
+      "lat": 32.9119018,
+      "lon": -96.7732335,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.792
+    },
+    {
+      "bbox": {
+        "x1": 0.2421,
+        "x2": 0.291,
+        "y1": 0.1913,
+        "y2": 0.2294
+      },
+      "confidence": 0.751,
+      "id": "ct-0031",
+      "lat": 32.9125724,
+      "lon": -96.7739431,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.751
+    },
+    {
+      "bbox": {
+        "x1": 0.6664,
+        "x2": 0.6968,
+        "y1": 0.6515,
+        "y2": 0.679
+      },
+      "confidence": 0.735,
+      "id": "ct-0032",
+      "lat": 32.9119431,
+      "lon": -96.7732307,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.735
+    },
+    {
+      "bbox": {
+        "x1": 0.2462,
+        "x2": 0.2943,
+        "y1": 0.0927,
+        "y2": 0.1289
+      },
+      "confidence": 0.678,
+      "id": "ct-0033",
+      "lat": 32.9127102,
+      "lon": -96.7739368,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.678
+    },
+    {
+      "bbox": {
+        "x1": 0.7588,
+        "x2": 0.7946,
+        "y1": 0.618,
+        "y2": 0.6445
+      },
+      "confidence": 0.672,
+      "id": "ct-0034",
+      "lat": 32.9119901,
+      "lon": -96.7730675,
+      "secondary_confidence": 1.0,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.672
+    },
+    {
+      "bbox": {
+        "x1": 0.759,
+        "x2": 0.7932,
+        "y1": 0.5926,
+        "y2": 0.6179
+      },
+      "confidence": 0.821,
+      "id": "ct-0035",
+      "lat": 32.9120261,
+      "lon": -96.7730685,
+      "secondary_confidence": 0.821,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.596
+    },
+    {
+      "bbox": {
+        "x1": 0.663,
+        "x2": 0.6934,
+        "y1": 0.6152,
+        "y2": 0.6404
+      },
+      "confidence": 0.804,
+      "id": "ct-0036",
+      "lat": 32.9119949,
+      "lon": -96.7732365,
+      "secondary_confidence": 0.804,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.554
+    },
+    {
+      "bbox": {
+        "x1": 0.6643,
+        "x2": 0.6927,
+        "y1": 0.6082,
+        "y2": 0.6278
+      },
+      "confidence": 0.578,
+      "id": "ct-0037",
+      "lat": 32.9120085,
+      "lon": -96.773236,
+      "secondary_confidence": 0.578,
+      "source_building_id": "5d78f053-f1de-423c-a936-e9435e945822",
+      "yolo_confidence": 0.38
+    },
+    {
+      "bbox": {
+        "x1": 0.7693,
+        "x2": 0.7945,
+        "y1": 0.1907,
+        "y2": 0.2056
+      },
+      "confidence": 0.425,
+      "id": "ct-0038",
+      "lat": 32.6209117,
+      "lon": -96.8079657,
+      "secondary_confidence": 0.425,
+      "source_building_id": "73f3e3af-3e79-42d1-8f80-0bff44261e55",
+      "yolo_confidence": 0.532
+    },
+    {
+      "bbox": {
+        "x1": 0.2961,
+        "x2": 0.3309,
+        "y1": 0.0867,
+        "y2": 0.1219
+      },
+      "confidence": 0.885,
+      "id": "ct-0039",
+      "lat": 32.6104323,
+      "lon": -96.6796999,
+      "secondary_confidence": 0.885,
+      "source_building_id": "db5d35e7-a2b0-4b38-964a-87de53ad1f21",
+      "yolo_confidence": 0.4
+    },
+    {
+      "bbox": {
+        "x1": 0.041,
+        "x2": 0.0757,
+        "y1": 0.2403,
+        "y2": 0.2739
+      },
+      "confidence": 0.708,
+      "id": "ct-0040",
+      "lat": 32.6102202,
+      "lon": -96.680138,
+      "secondary_confidence": 0.708,
+      "source_building_id": "db5d35e7-a2b0-4b38-964a-87de53ad1f21",
+      "yolo_confidence": 0.376
+    },
+    {
+      "bbox": {
+        "x1": 0.3543,
+        "x2": 0.3908,
+        "y1": 0.7719,
+        "y2": 0.8203
+      },
+      "confidence": 0.887,
+      "id": "ct-0041",
+      "lat": 32.6590109,
+      "lon": -96.8774945,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92ef6b4a-d123-4829-b3e0-cb7597d81a93",
+      "yolo_confidence": 0.887
+    },
+    {
+      "bbox": {
+        "x1": 0.3806,
+        "x2": 0.4179,
+        "y1": 0.7672,
+        "y2": 0.818
+      },
+      "confidence": 0.884,
+      "id": "ct-0042",
+      "lat": 32.6590157,
+      "lon": -96.8774487,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92ef6b4a-d123-4829-b3e0-cb7597d81a93",
+      "yolo_confidence": 0.884
+    },
+    {
+      "bbox": {
+        "x1": 0.1015,
+        "x2": 0.1275,
+        "y1": 0.2174,
+        "y2": 0.2387
+      },
+      "confidence": 0.675,
+      "id": "ct-0043",
+      "lat": 32.6597989,
+      "lon": -96.8779376,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92ef6b4a-d123-4829-b3e0-cb7597d81a93",
+      "yolo_confidence": 0.675
+    },
+    {
+      "bbox": {
+        "x1": 0.123,
+        "x2": 0.1458,
+        "y1": 0.2137,
+        "y2": 0.2338
+      },
+      "confidence": 0.773,
+      "id": "ct-0044",
+      "lat": 32.659805,
+      "lon": -96.8779034,
+      "secondary_confidence": 0.773,
+      "source_building_id": "92ef6b4a-d123-4829-b3e0-cb7597d81a93",
+      "yolo_confidence": 0.567
+    },
+    {
+      "bbox": {
+        "x1": 0.1036,
+        "x2": 0.1333,
+        "y1": 0.5615,
+        "y2": 0.5906
+      },
+      "confidence": 0.897,
+      "id": "ct-0045",
+      "lat": 32.7800088,
+      "lon": -96.6899921,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.897
+    },
+    {
+      "bbox": {
+        "x1": 0.1017,
+        "x2": 0.1335,
+        "y1": 0.5878,
+        "y2": 0.6179
+      },
+      "confidence": 0.89,
+      "id": "ct-0046",
+      "lat": 32.7799717,
+      "lon": -96.6899936,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.89
+    },
+    {
+      "bbox": {
+        "x1": 0.0087,
+        "x2": 0.0356,
+        "y1": 0.5864,
+        "y2": 0.6167
+      },
+      "confidence": 0.881,
+      "id": "ct-0047",
+      "lat": 32.7799735,
+      "lon": -96.6901574,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.881
+    },
+    {
+      "bbox": {
+        "x1": 0.0569,
+        "x2": 0.0888,
+        "y1": 0.5875,
+        "y2": 0.6156
+      },
+      "confidence": 0.865,
+      "id": "ct-0048",
+      "lat": 32.7799735,
+      "lon": -96.6900704,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.865
+    },
+    {
+      "bbox": {
+        "x1": 0.0081,
+        "x2": 0.0353,
+        "y1": 0.5602,
+        "y2": 0.5884
+      },
+      "confidence": 0.857,
+      "id": "ct-0049",
+      "lat": 32.7800112,
+      "lon": -96.6901581,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.857
+    },
+    {
+      "bbox": {
+        "x1": 0.0572,
+        "x2": 0.0875,
+        "y1": 0.5631,
+        "y2": 0.5913
+      },
+      "confidence": 0.793,
+      "id": "ct-0050",
+      "lat": 32.7800072,
+      "lon": -96.6900712,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.793
+    },
+    {
+      "bbox": {
+        "x1": 0.0595,
+        "x2": 0.0899,
+        "y1": 0.5413,
+        "y2": 0.5683
+      },
+      "confidence": 0.789,
+      "id": "ct-0051",
+      "lat": 32.7800383,
+      "lon": -96.6900671,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.789
+    },
+    {
+      "bbox": {
+        "x1": 0.1049,
+        "x2": 0.1328,
+        "y1": 0.5395,
+        "y2": 0.5652
+      },
+      "confidence": 0.756,
+      "id": "ct-0052",
+      "lat": 32.7800417,
+      "lon": -96.6899914,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.756
+    },
+    {
+      "bbox": {
+        "x1": 0.0077,
+        "x2": 0.0343,
+        "y1": 0.5407,
+        "y2": 0.5607
+      },
+      "confidence": 0.754,
+      "id": "ct-0053",
+      "lat": 32.7800439,
+      "lon": -96.6901593,
+      "secondary_confidence": 1.0,
+      "source_building_id": "08a2237f-730e-4367-a547-1a15f609e060",
+      "yolo_confidence": 0.754
+    },
+    {
+      "bbox": {
+        "x1": 0.2222,
+        "x2": 0.2424,
+        "y1": 0.5936,
+        "y2": 0.6198
+      },
+      "confidence": 0.769,
+      "id": "ct-0054",
+      "lat": 32.8029215,
+      "lon": -96.6666007,
+      "secondary_confidence": 1.0,
+      "source_building_id": "813f0ba2-3636-4a24-964d-8b814d16e5ff",
+      "yolo_confidence": 0.769
+    },
+    {
+      "bbox": {
+        "x1": 0.0942,
+        "x2": 0.1228,
+        "y1": 0.4016,
+        "y2": 0.451
+      },
+      "confidence": 0.912,
+      "id": "ct-0055",
+      "lat": 32.8667927,
+      "lon": -96.7942329,
+      "secondary_confidence": 1.0,
+      "source_building_id": "95dc2779-22b2-43bc-9975-7a08661d211d",
+      "yolo_confidence": 0.912
+    },
+    {
+      "bbox": {
+        "x1": 0.1317,
+        "x2": 0.1607,
+        "y1": 0.4011,
+        "y2": 0.4501
+      },
+      "confidence": 0.903,
+      "id": "ct-0056",
+      "lat": 32.8667936,
+      "lon": -96.7941682,
+      "secondary_confidence": 1.0,
+      "source_building_id": "95dc2779-22b2-43bc-9975-7a08661d211d",
+      "yolo_confidence": 0.903
+    },
+    {
+      "bbox": {
+        "x1": 0.9282,
+        "x2": 0.9713,
+        "y1": 0.199,
+        "y2": 0.2308
+      },
+      "confidence": 0.808,
+      "id": "ct-0057",
+      "lat": 32.7700732,
+      "lon": -96.8296003,
+      "secondary_confidence": 1.0,
+      "source_building_id": "affcbfdf-e2cc-431f-9741-e82d96a233d0",
+      "yolo_confidence": 0.808
+    },
+    {
+      "bbox": {
+        "x1": 0.9228,
+        "x2": 0.969,
+        "y1": 0.1689,
+        "y2": 0.2015
+      },
+      "confidence": 0.743,
+      "id": "ct-0058",
+      "lat": 32.7701143,
+      "lon": -96.8296068,
+      "secondary_confidence": 1.0,
+      "source_building_id": "affcbfdf-e2cc-431f-9741-e82d96a233d0",
+      "yolo_confidence": 0.743
+    },
+    {
+      "bbox": {
+        "x1": 0.9819,
+        "x2": 1.0,
+        "y1": 0.9002,
+        "y2": 0.933
+      },
+      "confidence": 0.793,
+      "id": "ct-0059",
+      "lat": 32.7706632,
+      "lon": -96.8982695,
+      "secondary_confidence": 1.0,
+      "source_building_id": "005fcf9c-d8be-4b37-a72d-d7e36109c5ed",
+      "yolo_confidence": 0.793
+    },
+    {
+      "bbox": {
+        "x1": 0.9778,
+        "x2": 1.0,
+        "y1": 0.8775,
+        "y2": 0.9069
+      },
+      "confidence": 0.698,
+      "id": "ct-0060",
+      "lat": 32.770697,
+      "lon": -96.8982731,
+      "secondary_confidence": 1.0,
+      "source_building_id": "005fcf9c-d8be-4b37-a72d-d7e36109c5ed",
+      "yolo_confidence": 0.698
+    },
+    {
+      "bbox": {
+        "x1": 0.3189,
+        "x2": 0.368,
+        "y1": 0.422,
+        "y2": 0.4732
+      },
+      "confidence": 0.905,
+      "id": "ct-0061",
+      "lat": 32.8450312,
+      "lon": -96.8629311,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a2e90c3-ae7e-404b-a2d6-6132a97b3562",
+      "yolo_confidence": 0.905
+    },
+    {
+      "bbox": {
+        "x1": 0.4158,
+        "x2": 0.4694,
+        "y1": 0.3208,
+        "y2": 0.3721
+      },
+      "confidence": 0.904,
+      "id": "ct-0062",
+      "lat": 32.8451713,
+      "lon": -96.8627609,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a2e90c3-ae7e-404b-a2d6-6132a97b3562",
+      "yolo_confidence": 0.904
+    },
+    {
+      "bbox": {
+        "x1": 0.3,
+        "x2": 0.3476,
+        "y1": 0.4444,
+        "y2": 0.4934
+      },
+      "confidence": 0.899,
+      "id": "ct-0063",
+      "lat": 32.8450018,
+      "lon": -96.8629648,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a2e90c3-ae7e-404b-a2d6-6132a97b3562",
+      "yolo_confidence": 0.899
+    },
+    {
+      "bbox": {
+        "x1": 0.345,
+        "x2": 0.3967,
+        "y1": 0.3934,
+        "y2": 0.4462
+      },
+      "confidence": 0.897,
+      "id": "ct-0064",
+      "lat": 32.8450697,
+      "lon": -96.8628842,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a2e90c3-ae7e-404b-a2d6-6132a97b3562",
+      "yolo_confidence": 0.897
+    },
+    {
+      "bbox": {
+        "x1": 0.3976,
+        "x2": 0.4485,
+        "y1": 0.3424,
+        "y2": 0.3906
+      },
+      "confidence": 0.874,
+      "id": "ct-0065",
+      "lat": 32.8451435,
+      "lon": -96.8627945,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a2e90c3-ae7e-404b-a2d6-6132a97b3562",
+      "yolo_confidence": 0.874
+    },
+    {
+      "bbox": {
+        "x1": 0.0005,
+        "x2": 0.0218,
+        "y1": 0.0027,
+        "y2": 0.0405
+      },
+      "confidence": 0.371,
+      "id": "ct-0066",
+      "lat": 32.9083743,
+      "lon": -96.6769448,
+      "secondary_confidence": 0.371,
+      "source_building_id": "2baf5971-a26d-4538-b15e-4da701549e38",
+      "yolo_confidence": 0.378
+    },
+    {
+      "bbox": {
+        "x1": 0.5304,
+        "x2": 0.5481,
+        "y1": 0.7009,
+        "y2": 0.719
+      },
+      "confidence": 0.775,
+      "id": "ct-0067",
+      "lat": 32.6954325,
+      "lon": -96.8970485,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c1bba150-cb26-4102-9c87-6c9c6d1172c7",
+      "yolo_confidence": 0.775
+    },
+    {
+      "bbox": {
+        "x1": 0.9402,
+        "x2": 0.966,
+        "y1": 0.4076,
+        "y2": 0.4349
+      },
+      "confidence": 0.507,
+      "id": "ct-0068",
+      "lat": 32.6222078,
+      "lon": -96.6728217,
+      "secondary_confidence": 0.507,
+      "source_building_id": "4d2b4d07-885c-4c88-b2de-712d7de6c20e",
+      "yolo_confidence": 0.465
+    },
+    {
+      "bbox": {
+        "x1": 0.4011,
+        "x2": 0.4395,
+        "y1": 0.5677,
+        "y2": 0.6087
+      },
+      "confidence": 0.869,
+      "id": "ct-0069",
+      "lat": 32.7309351,
+      "lon": -96.5572403,
+      "secondary_confidence": 1.0,
+      "source_building_id": "1d74d2d7-1a32-4fb1-af78-0861c8a5d941",
+      "yolo_confidence": 0.869
+    },
+    {
+      "bbox": {
+        "x1": 0.3868,
+        "x2": 0.4273,
+        "y1": 0.5514,
+        "y2": 0.5947
+      },
+      "confidence": 0.852,
+      "id": "ct-0070",
+      "lat": 32.7309562,
+      "lon": -96.5572631,
+      "secondary_confidence": 1.0,
+      "source_building_id": "1d74d2d7-1a32-4fb1-af78-0861c8a5d941",
+      "yolo_confidence": 0.852
+    },
+    {
+      "bbox": {
+        "x1": 0.4791,
+        "x2": 0.4969,
+        "y1": 0.849,
+        "y2": 0.8623
+      },
+      "confidence": 0.708,
+      "id": "ct-0071",
+      "lat": 32.9548184,
+      "lon": -96.8826848,
+      "secondary_confidence": 0.708,
+      "source_building_id": "f63130a8-549c-42d7-9145-437f9d0291be",
+      "yolo_confidence": 0.266
+    },
+    {
+      "bbox": {
+        "x1": 0.2628,
+        "x2": 0.2847,
+        "y1": 0.5034,
+        "y2": 0.5233
+      },
+      "confidence": 0.698,
+      "id": "ct-0072",
+      "lat": 32.8192564,
+      "lon": -96.849545,
+      "secondary_confidence": 0.698,
+      "source_building_id": "d40e6dca-dbb4-47fd-855b-c31115eca99c",
+      "yolo_confidence": 0.515
+    },
+    {
+      "bbox": {
+        "x1": 0.2655,
+        "x2": 0.2946,
+        "y1": 0.5117,
+        "y2": 0.5399
+      },
+      "confidence": 0.817,
+      "id": "ct-0073",
+      "lat": 32.8305674,
+      "lon": -96.8811039,
+      "secondary_confidence": 1.0,
+      "source_building_id": "51788306-99e0-489b-91ca-4918f2794932",
+      "yolo_confidence": 0.817
+    },
+    {
+      "bbox": {
+        "x1": 0.2132,
+        "x2": 0.2474,
+        "y1": 0.3396,
+        "y2": 0.3757
+      },
+      "confidence": 0.891,
+      "id": "ct-0074",
+      "lat": 32.8387192,
+      "lon": -96.8656295,
+      "secondary_confidence": 1.0,
+      "source_building_id": "cf08c4aa-92ce-40fc-a38c-12bd5394b8b5",
+      "yolo_confidence": 0.891
+    },
+    {
+      "bbox": {
+        "x1": 0.23,
+        "x2": 0.2634,
+        "y1": 0.3242,
+        "y2": 0.3601
+      },
+      "confidence": 0.883,
+      "id": "ct-0075",
+      "lat": 32.8387408,
+      "lon": -96.8656013,
+      "secondary_confidence": 1.0,
+      "source_building_id": "cf08c4aa-92ce-40fc-a38c-12bd5394b8b5",
+      "yolo_confidence": 0.883
+    },
+    {
+      "bbox": {
+        "x1": 0.1984,
+        "x2": 0.2324,
+        "y1": 0.3547,
+        "y2": 0.3902
+      },
+      "confidence": 0.883,
+      "id": "ct-0076",
+      "lat": 32.8386988,
+      "lon": -96.8656551,
+      "secondary_confidence": 1.0,
+      "source_building_id": "cf08c4aa-92ce-40fc-a38c-12bd5394b8b5",
+      "yolo_confidence": 0.883
+    },
+    {
+      "bbox": {
+        "x1": 0.1839,
+        "x2": 0.218,
+        "y1": 0.3715,
+        "y2": 0.4059
+      },
+      "confidence": 0.865,
+      "id": "ct-0077",
+      "lat": 32.8386763,
+      "lon": -96.8656798,
+      "secondary_confidence": 1.0,
+      "source_building_id": "cf08c4aa-92ce-40fc-a38c-12bd5394b8b5",
+      "yolo_confidence": 0.865
+    },
+    {
+      "bbox": {
+        "x1": 0.1693,
+        "x2": 0.2021,
+        "y1": 0.3888,
+        "y2": 0.4239
+      },
+      "confidence": 0.861,
+      "id": "ct-0078",
+      "lat": 32.8386518,
+      "lon": -96.865706,
+      "secondary_confidence": 1.0,
+      "source_building_id": "cf08c4aa-92ce-40fc-a38c-12bd5394b8b5",
+      "yolo_confidence": 0.861
+    },
+    {
+      "bbox": {
+        "x1": 0.7562,
+        "x2": 0.7732,
+        "y1": 0.2162,
+        "y2": 0.2329
+      },
+      "confidence": 0.559,
+      "id": "ct-0079",
+      "lat": 32.8816875,
+      "lon": -96.8443629,
+      "secondary_confidence": 0.559,
+      "source_building_id": "72d9ae23-fde1-4782-86ed-bf4e4e6ecc6c",
+      "yolo_confidence": 0.257
+    },
+    {
+      "bbox": {
+        "x1": 0.522,
+        "x2": 0.5711,
+        "y1": 0.358,
+        "y2": 0.4007
+      },
+      "confidence": 0.892,
+      "id": "ct-0080",
+      "lat": 32.6407993,
+      "lon": -96.7754892,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4ad6b5aa-59c3-48eb-903d-e7099bc9d43c",
+      "yolo_confidence": 0.892
+    },
+    {
+      "bbox": {
+        "x1": 0.4714,
+        "x2": 0.5224,
+        "y1": 0.3884,
+        "y2": 0.4284
+      },
+      "confidence": 0.867,
+      "id": "ct-0081",
+      "lat": 32.640759,
+      "lon": -96.7755744,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4ad6b5aa-59c3-48eb-903d-e7099bc9d43c",
+      "yolo_confidence": 0.867
+    },
+    {
+      "bbox": {
+        "x1": 0.0007,
+        "x2": 0.0152,
+        "y1": 0.7097,
+        "y2": 0.7305
+      },
+      "confidence": 0.413,
+      "id": "ct-0082",
+      "lat": 32.6403264,
+      "lon": -96.7764138,
+      "secondary_confidence": 0.413,
+      "source_building_id": "4ad6b5aa-59c3-48eb-903d-e7099bc9d43c",
+      "yolo_confidence": 0.298
+    },
+    {
+      "bbox": {
+        "x1": 0.3729,
+        "x2": 0.3931,
+        "y1": 0.8619,
+        "y2": 0.8888
+      },
+      "confidence": 0.523,
+      "id": "ct-0083",
+      "lat": 32.9381814,
+      "lon": -96.8282419,
+      "secondary_confidence": 0.523,
+      "source_building_id": "743e265e-76df-4e70-af54-e4f7bec7d8aa",
+      "yolo_confidence": 0.572
+    },
+    {
+      "bbox": {
+        "x1": 0.4112,
+        "x2": 0.4376,
+        "y1": 0.3137,
+        "y2": 0.3646
+      },
+      "confidence": 0.883,
+      "id": "ct-0084",
+      "lat": 32.93046,
+      "lon": -96.8198179,
+      "secondary_confidence": 1.0,
+      "source_building_id": "402046ea-add4-4cce-a4d9-004ec5a29912",
+      "yolo_confidence": 0.883
+    },
+    {
+      "bbox": {
+        "x1": 0.4334,
+        "x2": 0.4601,
+        "y1": 0.3146,
+        "y2": 0.3668
+      },
+      "confidence": 0.878,
+      "id": "ct-0085",
+      "lat": 32.9304578,
+      "lon": -96.8197795,
+      "secondary_confidence": 1.0,
+      "source_building_id": "402046ea-add4-4cce-a4d9-004ec5a29912",
+      "yolo_confidence": 0.878
+    },
+    {
+      "bbox": {
+        "x1": 0.2383,
+        "x2": 0.278,
+        "y1": 0.3648,
+        "y2": 0.4099
+      },
+      "confidence": 0.902,
+      "id": "ct-0086",
+      "lat": 32.9888275,
+      "lon": -96.8050296,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7d9aac79-5768-4dde-bc86-b26155e5609a",
+      "yolo_confidence": 0.902
+    },
+    {
+      "bbox": {
+        "x1": 0.221,
+        "x2": 0.261,
+        "y1": 0.3504,
+        "y2": 0.3953
+      },
+      "confidence": 0.888,
+      "id": "ct-0087",
+      "lat": 32.9888475,
+      "lon": -96.8050591,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7d9aac79-5768-4dde-bc86-b26155e5609a",
+      "yolo_confidence": 0.888
+    },
+    {
+      "bbox": {
+        "x1": 0.8324,
+        "x2": 0.8598,
+        "y1": 0.1704,
+        "y2": 0.2132
+      },
+      "confidence": 0.877,
+      "id": "ct-0088",
+      "lat": 32.9374862,
+      "lon": -96.6925581,
+      "secondary_confidence": 1.0,
+      "source_building_id": "9e870301-ae5d-4045-90e7-e75be21613f0",
+      "yolo_confidence": 0.877
+    },
+    {
+      "bbox": {
+        "x1": 0.8131,
+        "x2": 0.8392,
+        "y1": 0.17,
+        "y2": 0.2127
+      },
+      "confidence": 0.854,
+      "id": "ct-0089",
+      "lat": 32.9374868,
+      "lon": -96.6925924,
+      "secondary_confidence": 1.0,
+      "source_building_id": "9e870301-ae5d-4045-90e7-e75be21613f0",
+      "yolo_confidence": 0.854
+    },
+    {
+      "bbox": {
+        "x1": 0.8794,
+        "x2": 0.9217,
+        "y1": 0.2768,
+        "y2": 0.3112
+      },
+      "confidence": 0.764,
+      "id": "ct-0090",
+      "lat": 32.9729505,
+      "lon": -96.7667665,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0949bab2-8a44-4c83-a203-53935c444e69",
+      "yolo_confidence": 0.764
+    },
+    {
+      "bbox": {
+        "x1": 0.8531,
+        "x2": 0.871,
+        "y1": 0.3249,
+        "y2": 0.3441
+      },
+      "confidence": 0.583,
+      "id": "ct-0091",
+      "lat": 32.9057046,
+      "lon": -96.6578758,
+      "secondary_confidence": 0.583,
+      "source_building_id": "fcb6dd32-01f4-4729-8231-72ce04cdde89",
+      "yolo_confidence": 0.601
+    },
+    {
+      "bbox": {
+        "x1": 0.8528,
+        "x2": 0.8717,
+        "y1": 0.3019,
+        "y2": 0.3217
+      },
+      "confidence": 0.462,
+      "id": "ct-0092",
+      "lat": 32.905736,
+      "lon": -96.6578755,
+      "secondary_confidence": 0.462,
+      "source_building_id": "fcb6dd32-01f4-4729-8231-72ce04cdde89",
+      "yolo_confidence": 0.475
+    },
+    {
+      "bbox": {
+        "x1": 0.8541,
+        "x2": 0.8715,
+        "y1": 0.3132,
+        "y2": 0.3313
+      },
+      "confidence": 0.544,
+      "id": "ct-0093",
+      "lat": 32.9057215,
+      "lon": -96.6578745,
+      "secondary_confidence": 0.544,
+      "source_building_id": "fcb6dd32-01f4-4729-8231-72ce04cdde89",
+      "yolo_confidence": 0.375
+    },
+    {
+      "bbox": {
+        "x1": 0.5637,
+        "x2": 0.6122,
+        "y1": 0.0497,
+        "y2": 0.0969
+      },
+      "confidence": 0.794,
+      "id": "ct-0094",
+      "lat": 32.8098562,
+      "lon": -96.8374601,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0fdc872f-e19c-4c0b-a4ae-74cf67e47801",
+      "yolo_confidence": 0.794
+    },
+    {
+      "bbox": {
+        "x1": 0.5931,
+        "x2": 0.6496,
+        "y1": 0.0981,
+        "y2": 0.1481
+      },
+      "confidence": 0.763,
+      "id": "ct-0095",
+      "lat": 32.8097872,
+      "lon": -96.8374027,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0fdc872f-e19c-4c0b-a4ae-74cf67e47801",
+      "yolo_confidence": 0.763
+    },
+    {
+      "bbox": {
+        "x1": 0.5775,
+        "x2": 0.6329,
+        "y1": 0.0744,
+        "y2": 0.1236
+      },
+      "confidence": 0.533,
+      "id": "ct-0096",
+      "lat": 32.8098206,
+      "lon": -96.8374305,
+      "secondary_confidence": 0.533,
+      "source_building_id": "0fdc872f-e19c-4c0b-a4ae-74cf67e47801",
+      "yolo_confidence": 0.644
+    },
+    {
+      "bbox": {
+        "x1": 0.9428,
+        "x2": 0.9894,
+        "y1": 0.0425,
+        "y2": 0.0733
+      },
+      "confidence": 0.842,
+      "id": "ct-0097",
+      "lat": 32.9902733,
+      "lon": -96.6574182,
+      "secondary_confidence": 1.0,
+      "source_building_id": "159d11a8-1cbf-4343-809c-8d49117cc139",
+      "yolo_confidence": 0.842
+    },
+    {
+      "bbox": {
+        "x1": 0.9432,
+        "x2": 0.9891,
+        "y1": 0.0162,
+        "y2": 0.0449
+      },
+      "confidence": 0.817,
+      "id": "ct-0098",
+      "lat": 32.990311,
+      "lon": -96.6574181,
+      "secondary_confidence": 1.0,
+      "source_building_id": "159d11a8-1cbf-4343-809c-8d49117cc139",
+      "yolo_confidence": 0.817
+    },
+    {
+      "bbox": {
+        "x1": 0.9028,
+        "x2": 0.9456,
+        "y1": 0.6739,
+        "y2": 0.7043
+      },
+      "confidence": 0.57,
+      "id": "ct-0099",
+      "lat": 32.9894008,
+      "lon": -96.6574901,
+      "secondary_confidence": 0.57,
+      "source_building_id": "159d11a8-1cbf-4343-809c-8d49117cc139",
+      "yolo_confidence": 0.418
+    },
+    {
+      "bbox": {
+        "x1": 0.9035,
+        "x2": 0.9462,
+        "y1": 0.6637,
+        "y2": 0.6903
+      },
+      "confidence": 0.822,
+      "id": "ct-0100",
+      "lat": 32.9894175,
+      "lon": -96.6574889,
+      "secondary_confidence": 0.822,
+      "source_building_id": "159d11a8-1cbf-4343-809c-8d49117cc139",
+      "yolo_confidence": 0.363
+    },
+    {
+      "bbox": {
+        "x1": 0.9026,
+        "x2": 0.9459,
+        "y1": 0.6503,
+        "y2": 0.6757
+      },
+      "confidence": 0.844,
+      "id": "ct-0101",
+      "lat": 32.9894369,
+      "lon": -96.65749,
+      "secondary_confidence": 0.844,
+      "source_building_id": "159d11a8-1cbf-4343-809c-8d49117cc139",
+      "yolo_confidence": 0.318
+    },
+    {
+      "bbox": {
+        "x1": 0.0472,
+        "x2": 0.0914,
+        "y1": 0.5729,
+        "y2": 0.6052
+      },
+      "confidence": 0.871,
+      "id": "ct-0102",
+      "lat": 32.7458472,
+      "lon": -96.6689013,
+      "secondary_confidence": 1.0,
+      "source_building_id": "ddcc2844-4754-48b0-ae44-1c2c4a4603cd",
+      "yolo_confidence": 0.871
+    },
+    {
+      "bbox": {
+        "x1": 0.4372,
+        "x2": 0.4782,
+        "y1": 0.6534,
+        "y2": 0.6802
+      },
+      "confidence": 0.881,
+      "id": "ct-0103",
+      "lat": 32.9552872,
+      "lon": -96.7682492,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a57150b-e300-4b2e-8969-29aa126d3a6a",
+      "yolo_confidence": 0.881
+    },
+    {
+      "bbox": {
+        "x1": 0.4361,
+        "x2": 0.4784,
+        "y1": 0.6316,
+        "y2": 0.6599
+      },
+      "confidence": 0.853,
+      "id": "ct-0104",
+      "lat": 32.9553163,
+      "lon": -96.76825,
+      "secondary_confidence": 1.0,
+      "source_building_id": "7a57150b-e300-4b2e-8969-29aa126d3a6a",
+      "yolo_confidence": 0.853
+    },
+    {
+      "bbox": {
+        "x1": 0.1192,
+        "x2": 0.1619,
+        "y1": 0.454,
+        "y2": 0.4803
+      },
+      "confidence": 0.865,
+      "id": "ct-0105",
+      "lat": 32.7759424,
+      "lon": -96.8099876,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92628e14-a084-4e30-8d45-ee22bd29b6b4",
+      "yolo_confidence": 0.865
+    },
+    {
+      "bbox": {
+        "x1": 0.127,
+        "x2": 0.1698,
+        "y1": 0.4131,
+        "y2": 0.4414
+      },
+      "confidence": 0.824,
+      "id": "ct-0106",
+      "lat": 32.7759977,
+      "lon": -96.8099741,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92628e14-a084-4e30-8d45-ee22bd29b6b4",
+      "yolo_confidence": 0.824
+    },
+    {
+      "bbox": {
+        "x1": 0.1319,
+        "x2": 0.1758,
+        "y1": 0.371,
+        "y2": 0.4022
+      },
+      "confidence": 0.815,
+      "id": "ct-0107",
+      "lat": 32.776054,
+      "lon": -96.8099647,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92628e14-a084-4e30-8d45-ee22bd29b6b4",
+      "yolo_confidence": 0.815
+    },
+    {
+      "bbox": {
+        "x1": 0.1296,
+        "x2": 0.1735,
+        "y1": 0.393,
+        "y2": 0.4223
+      },
+      "confidence": 0.714,
+      "id": "ct-0108",
+      "lat": 32.7760249,
+      "lon": -96.8099687,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92628e14-a084-4e30-8d45-ee22bd29b6b4",
+      "yolo_confidence": 0.714
+    },
+    {
+      "bbox": {
+        "x1": 0.1227,
+        "x2": 0.1656,
+        "y1": 0.4322,
+        "y2": 0.4609
+      },
+      "confidence": 0.697,
+      "id": "ct-0109",
+      "lat": 32.775971,
+      "lon": -96.8099813,
+      "secondary_confidence": 1.0,
+      "source_building_id": "92628e14-a084-4e30-8d45-ee22bd29b6b4",
+      "yolo_confidence": 0.697
+    },
+    {
+      "bbox": {
+        "x1": 0.8455,
+        "x2": 0.8886,
+        "y1": 0.0,
+        "y2": 0.0277
+      },
+      "confidence": 0.875,
+      "id": "ct-0110",
+      "lat": 32.9958103,
+      "lon": -96.6617462,
+      "secondary_confidence": 1.0,
+      "source_building_id": "70870040-1061-41e8-8e90-20552682253f",
+      "yolo_confidence": 0.875
+    },
+    {
+      "bbox": {
+        "x1": 0.8452,
+        "x2": 0.8874,
+        "y1": 0.0222,
+        "y2": 0.052
+      },
+      "confidence": 0.853,
+      "id": "ct-0111",
+      "lat": 32.9957782,
+      "lon": -96.6617474,
+      "secondary_confidence": 1.0,
+      "source_building_id": "70870040-1061-41e8-8e90-20552682253f",
+      "yolo_confidence": 0.853
+    },
+    {
+      "bbox": {
+        "x1": 0.8447,
+        "x2": 0.8876,
+        "y1": 0.0463,
+        "y2": 0.0771
+      },
+      "confidence": 0.847,
+      "id": "ct-0112",
+      "lat": 32.9957442,
+      "lon": -96.6617476,
+      "secondary_confidence": 1.0,
+      "source_building_id": "70870040-1061-41e8-8e90-20552682253f",
+      "yolo_confidence": 0.847
+    },
+    {
+      "bbox": {
+        "x1": 0.0678,
+        "x2": 0.0931,
+        "y1": 0.5856,
+        "y2": 0.6307
+      },
+      "confidence": 0.868,
+      "id": "ct-0113",
+      "lat": 32.9351242,
+      "lon": -96.8440325,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0d780e97-a442-4718-8885-b3215b047776",
+      "yolo_confidence": 0.868
+    },
+    {
+      "bbox": {
+        "x1": 0.0345,
+        "x2": 0.0583,
+        "y1": 0.5874,
+        "y2": 0.6273
+      },
+      "confidence": 0.854,
+      "id": "ct-0114",
+      "lat": 32.9351254,
+      "lon": -96.8440909,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0d780e97-a442-4718-8885-b3215b047776",
+      "yolo_confidence": 0.854
+    },
+    {
+      "bbox": {
+        "x1": 0.1051,
+        "x2": 0.1319,
+        "y1": 0.5856,
+        "y2": 0.6315
+      },
+      "confidence": 0.808,
+      "id": "ct-0115",
+      "lat": 32.9351237,
+      "lon": -96.8439671,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0d780e97-a442-4718-8885-b3215b047776",
+      "yolo_confidence": 0.808
+    },
+    {
+      "bbox": {
+        "x1": 0.0863,
+        "x2": 0.1103,
+        "y1": 0.5865,
+        "y2": 0.631
+      },
+      "confidence": 0.428,
+      "id": "ct-0116",
+      "lat": 32.9351234,
+      "lon": -96.8440017,
+      "secondary_confidence": 0.428,
+      "source_building_id": "0d780e97-a442-4718-8885-b3215b047776",
+      "yolo_confidence": 0.648
+    },
+    {
+      "bbox": {
+        "x1": 0.0331,
+        "x2": 0.0914,
+        "y1": 0.5866,
+        "y2": 0.6284
+      },
+      "confidence": 0.732,
+      "id": "ct-0117",
+      "lat": 32.9351251,
+      "lon": -96.8440636,
+      "secondary_confidence": 0.732,
+      "source_building_id": "0d780e97-a442-4718-8885-b3215b047776",
+      "yolo_confidence": 0.351
+    },
+    {
+      "bbox": {
+        "x1": 0.8717,
+        "x2": 0.8934,
+        "y1": 0.567,
+        "y2": 0.5862
+      },
+      "confidence": 0.792,
+      "id": "ct-0118",
+      "lat": 32.9544416,
+      "lon": -96.7062832,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.792
+    },
+    {
+      "bbox": {
+        "x1": 0.9569,
+        "x2": 0.9771,
+        "y1": 0.626,
+        "y2": 0.6427
+      },
+      "confidence": 0.77,
+      "id": "ct-0119",
+      "lat": 32.9543617,
+      "lon": -96.7061383,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.77
+    },
+    {
+      "bbox": {
+        "x1": 0.9516,
+        "x2": 0.9813,
+        "y1": 0.8274,
+        "y2": 0.8462
+      },
+      "confidence": 0.765,
+      "id": "ct-0120",
+      "lat": 32.9540818,
+      "lon": -96.7061393,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.765
+    },
+    {
+      "bbox": {
+        "x1": 0.8725,
+        "x2": 0.8935,
+        "y1": 0.6148,
+        "y2": 0.6314
+      },
+      "confidence": 0.692,
+      "id": "ct-0121",
+      "lat": 32.9543773,
+      "lon": -96.7062826,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.692
+    },
+    {
+      "bbox": {
+        "x1": 0.8717,
+        "x2": 0.8942,
+        "y1": 0.6273,
+        "y2": 0.6433
+      },
+      "confidence": 0.657,
+      "id": "ct-0122",
+      "lat": 32.9543604,
+      "lon": -96.7062826,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.657
+    },
+    {
+      "bbox": {
+        "x1": 0.9568,
+        "x2": 0.9767,
+        "y1": 0.5926,
+        "y2": 0.608
+      },
+      "confidence": 0.688,
+      "id": "ct-0123",
+      "lat": 32.9544088,
+      "lon": -96.7061388,
+      "secondary_confidence": 0.688,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.62
+    },
+    {
+      "bbox": {
+        "x1": 0.9574,
+        "x2": 0.9766,
+        "y1": 0.6135,
+        "y2": 0.6286
+      },
+      "confidence": 0.684,
+      "id": "ct-0124",
+      "lat": 32.9543801,
+      "lon": -96.7061384,
+      "secondary_confidence": 0.684,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.571
+    },
+    {
+      "bbox": {
+        "x1": 0.872,
+        "x2": 0.8933,
+        "y1": 0.6008,
+        "y2": 0.6181
+      },
+      "confidence": 0.848,
+      "id": "ct-0125",
+      "lat": 32.9543962,
+      "lon": -96.7062831,
+      "secondary_confidence": 0.848,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.564
+    },
+    {
+      "bbox": {
+        "x1": 0.9568,
+        "x2": 0.9759,
+        "y1": 0.5784,
+        "y2": 0.5941
+      },
+      "confidence": 0.808,
+      "id": "ct-0126",
+      "lat": 32.9544282,
+      "lon": -96.7061395,
+      "secondary_confidence": 0.808,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.538
+    },
+    {
+      "bbox": {
+        "x1": 0.8722,
+        "x2": 0.8929,
+        "y1": 0.5881,
+        "y2": 0.6071
+      },
+      "confidence": 0.77,
+      "id": "ct-0127",
+      "lat": 32.9544126,
+      "lon": -96.7062833,
+      "secondary_confidence": 0.77,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.51
+    },
+    {
+      "bbox": {
+        "x1": 0.9506,
+        "x2": 0.9824,
+        "y1": 0.8101,
+        "y2": 0.8309
+      },
+      "confidence": 0.549,
+      "id": "ct-0128",
+      "lat": 32.9541043,
+      "lon": -96.7061392,
+      "secondary_confidence": 0.549,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.475
+    },
+    {
+      "bbox": {
+        "x1": 0.9566,
+        "x2": 0.977,
+        "y1": 0.6037,
+        "y2": 0.6202
+      },
+      "confidence": 0.649,
+      "id": "ct-0129",
+      "lat": 32.9543927,
+      "lon": -96.7061388,
+      "secondary_confidence": 0.649,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.474
+    },
+    {
+      "bbox": {
+        "x1": 0.9576,
+        "x2": 0.9781,
+        "y1": 0.7189,
+        "y2": 0.7345
+      },
+      "confidence": 0.745,
+      "id": "ct-0130",
+      "lat": 32.954234,
+      "lon": -96.7061369,
+      "secondary_confidence": 0.745,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.405
+    },
+    {
+      "bbox": {
+        "x1": 0.9579,
+        "x2": 0.9789,
+        "y1": 0.7281,
+        "y2": 0.7422
+      },
+      "confidence": 0.729,
+      "id": "ct-0131",
+      "lat": 32.9542224,
+      "lon": -96.7061359,
+      "secondary_confidence": 0.729,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.385
+    },
+    {
+      "bbox": {
+        "x1": 0.8723,
+        "x2": 0.8923,
+        "y1": 0.5751,
+        "y2": 0.5955
+      },
+      "confidence": 0.752,
+      "id": "ct-0132",
+      "lat": 32.9544296,
+      "lon": -96.7062837,
+      "secondary_confidence": 0.752,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.371
+    },
+    {
+      "bbox": {
+        "x1": 0.956,
+        "x2": 0.979,
+        "y1": 0.7046,
+        "y2": 0.7203
+      },
+      "confidence": 0.498,
+      "id": "ct-0133",
+      "lat": 32.9542537,
+      "lon": -96.7061374,
+      "secondary_confidence": 0.498,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.361
+    },
+    {
+      "bbox": {
+        "x1": 0.9552,
+        "x2": 0.9761,
+        "y1": 0.5664,
+        "y2": 0.5826
+      },
+      "confidence": 0.65,
+      "id": "ct-0134",
+      "lat": 32.9544445,
+      "lon": -96.7061406,
+      "secondary_confidence": 0.65,
+      "source_building_id": "0087b628-a8cb-42da-940e-84e879b00c86",
+      "yolo_confidence": 0.304
+    },
+    {
+      "bbox": {
+        "x1": 0.4463,
+        "x2": 0.4644,
+        "y1": 0.0806,
+        "y2": 0.1037
+      },
+      "confidence": 0.839,
+      "id": "ct-0135",
+      "lat": 32.9169374,
+      "lon": -96.8310365,
+      "secondary_confidence": 0.839,
+      "source_building_id": "ffd64f1d-aac2-4a6a-b409-1051b2bb200c",
+      "yolo_confidence": 0.288
+    },
+    {
+      "bbox": {
+        "x1": 0.4944,
+        "x2": 0.5132,
+        "y1": 0.1196,
+        "y2": 0.1415
+      },
+      "confidence": 0.392,
+      "id": "ct-0136",
+      "lat": 32.908049,
+      "lon": -96.6672222,
+      "secondary_confidence": 0.392,
+      "source_building_id": "2d622f43-9663-439b-9bbd-2b4bfd3e30b0",
+      "yolo_confidence": 0.556
+    },
+    {
+      "bbox": {
+        "x1": 0.1408,
+        "x2": 0.1672,
+        "y1": 0.4668,
+        "y2": 0.4917
+      },
+      "confidence": 0.778,
+      "id": "ct-0137",
+      "lat": 32.8274118,
+      "lon": -96.6811897,
+      "secondary_confidence": 1.0,
+      "source_building_id": "ec06cc9b-faed-4b40-a37c-dcb8645b1c32",
+      "yolo_confidence": 0.778
+    },
+    {
+      "bbox": {
+        "x1": 0.1623,
+        "x2": 0.1893,
+        "y1": 0.4676,
+        "y2": 0.4904
+      },
+      "confidence": 0.769,
+      "id": "ct-0138",
+      "lat": 32.8274122,
+      "lon": -96.6811522,
+      "secondary_confidence": 1.0,
+      "source_building_id": "ec06cc9b-faed-4b40-a37c-dcb8645b1c32",
+      "yolo_confidence": 0.769
+    },
+    {
+      "bbox": {
+        "x1": 0.9293,
+        "x2": 0.9463,
+        "y1": 0.3777,
+        "y2": 0.3952
+      },
+      "confidence": 0.739,
+      "id": "ct-0139",
+      "lat": 32.6855226,
+      "lon": -96.8995065,
+      "secondary_confidence": 0.739,
+      "source_building_id": "d2884d02-72b1-4b18-a6a8-8d2b8c63ff5c",
+      "yolo_confidence": 0.568
+    },
+    {
+      "bbox": {
+        "x1": 0.8384,
+        "x2": 0.8586,
+        "y1": 0.3104,
+        "y2": 0.327
+      },
+      "confidence": 0.628,
+      "id": "ct-0140",
+      "lat": 32.6856165,
+      "lon": -96.8996599,
+      "secondary_confidence": 0.628,
+      "source_building_id": "d2884d02-72b1-4b18-a6a8-8d2b8c63ff5c",
+      "yolo_confidence": 0.51
+    },
+    {
+      "bbox": {
+        "x1": 0.9291,
+        "x2": 0.9459,
+        "y1": 0.3651,
+        "y2": 0.3915
+      },
+      "confidence": 0.597,
+      "id": "ct-0141",
+      "lat": 32.6855339,
+      "lon": -96.8995071,
+      "secondary_confidence": 0.597,
+      "source_building_id": "d2884d02-72b1-4b18-a6a8-8d2b8c63ff5c",
+      "yolo_confidence": 0.262
+    },
+    {
+      "bbox": {
+        "x1": 0.5058,
+        "x2": 0.5347,
+        "y1": 0.8396,
+        "y2": 0.8786
+      },
+      "confidence": 0.841,
+      "id": "ct-0142",
+      "lat": 32.9019015,
+      "lon": -96.5537569,
+      "secondary_confidence": 1.0,
+      "source_building_id": "56052331-a0d7-4cf8-a0b2-8302347465a2",
+      "yolo_confidence": 0.841
+    },
+    {
+      "bbox": {
+        "x1": 0.4852,
+        "x2": 0.5119,
+        "y1": 0.8386,
+        "y2": 0.8802
+      },
+      "confidence": 0.818,
+      "id": "ct-0143",
+      "lat": 32.901901,
+      "lon": -96.5537941,
+      "secondary_confidence": 1.0,
+      "source_building_id": "56052331-a0d7-4cf8-a0b2-8302347465a2",
+      "yolo_confidence": 0.818
+    },
+    {
+      "bbox": {
+        "x1": 0.4863,
+        "x2": 0.5153,
+        "y1": 0.1025,
+        "y2": 0.1507
+      },
+      "confidence": 0.919,
+      "id": "ct-0144",
+      "lat": 32.9617406,
+      "lon": -96.5851254,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b994bbfb-310a-4c33-aeb2-2e54014c65d9",
+      "yolo_confidence": 0.919
+    },
+    {
+      "bbox": {
+        "x1": 0.5096,
+        "x2": 0.5384,
+        "y1": 0.1032,
+        "y2": 0.1514
+      },
+      "confidence": 0.892,
+      "id": "ct-0145",
+      "lat": 32.9617396,
+      "lon": -96.5850857,
+      "secondary_confidence": 1.0,
+      "source_building_id": "b994bbfb-310a-4c33-aeb2-2e54014c65d9",
+      "yolo_confidence": 0.892
+    },
+    {
+      "bbox": {
+        "x1": 0.6432,
+        "x2": 0.6643,
+        "y1": 0.1216,
+        "y2": 0.1382
+      },
+      "confidence": 0.744,
+      "id": "ct-0146",
+      "lat": 32.8211253,
+      "lon": -96.8580845,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.744
+    },
+    {
+      "bbox": {
+        "x1": 0.6433,
+        "x2": 0.6629,
+        "y1": 0.1051,
+        "y2": 0.1214
+      },
+      "confidence": 0.738,
+      "id": "ct-0147",
+      "lat": 32.8211483,
+      "lon": -96.8580856,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.738
+    },
+    {
+      "bbox": {
+        "x1": 0.3579,
+        "x2": 0.379,
+        "y1": 0.052,
+        "y2": 0.0694
+      },
+      "confidence": 0.669,
+      "id": "ct-0148",
+      "lat": 32.8212211,
+      "lon": -96.8585743,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.669
+    },
+    {
+      "bbox": {
+        "x1": 0.1705,
+        "x2": 0.1907,
+        "y1": 0.0501,
+        "y2": 0.0669
+      },
+      "confidence": 0.487,
+      "id": "ct-0149",
+      "lat": 32.8212242,
+      "lon": -96.8588967,
+      "secondary_confidence": 0.487,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.553
+    },
+    {
+      "bbox": {
+        "x1": 0.525,
+        "x2": 0.545,
+        "y1": 0.6795,
+        "y2": 0.7135
+      },
+      "confidence": 0.493,
+      "id": "ct-0150",
+      "lat": 32.8203406,
+      "lon": -96.8582883,
+      "secondary_confidence": 0.493,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.46
+    },
+    {
+      "bbox": {
+        "x1": 0.6412,
+        "x2": 0.6663,
+        "y1": 0.1367,
+        "y2": 0.1547
+      },
+      "confidence": 0.879,
+      "id": "ct-0151",
+      "lat": 32.8211033,
+      "lon": -96.8580845,
+      "secondary_confidence": 0.879,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.395
+    },
+    {
+      "bbox": {
+        "x1": 0.3569,
+        "x2": 0.3847,
+        "y1": 0.0837,
+        "y2": 0.0988
+      },
+      "confidence": 0.806,
+      "id": "ct-0152",
+      "lat": 32.8211788,
+      "lon": -96.8585702,
+      "secondary_confidence": 0.806,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.321
+    },
+    {
+      "bbox": {
+        "x1": 0.3551,
+        "x2": 0.386,
+        "y1": 0.0861,
+        "y2": 0.1102
+      },
+      "confidence": 0.836,
+      "id": "ct-0153",
+      "lat": 32.8211693,
+      "lon": -96.8585706,
+      "secondary_confidence": 0.836,
+      "source_building_id": "4df79ae2-1ef0-4d8e-adba-4a0780d25e75",
+      "yolo_confidence": 0.281
+    },
+    {
+      "bbox": {
+        "x1": 0.3827,
+        "x2": 0.43,
+        "y1": 0.8145,
+        "y2": 0.8666
+      },
+      "confidence": 0.906,
+      "id": "ct-0154",
+      "lat": 32.8415279,
+      "lon": -96.8640555,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0935b95b-cb11-4456-ab79-1c285fcd8daf",
+      "yolo_confidence": 0.906
+    },
+    {
+      "bbox": {
+        "x1": 0.3658,
+        "x2": 0.4093,
+        "y1": 0.8346,
+        "y2": 0.8839
+      },
+      "confidence": 0.904,
+      "id": "ct-0155",
+      "lat": 32.841502,
+      "lon": -96.8640877,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0935b95b-cb11-4456-ab79-1c285fcd8daf",
+      "yolo_confidence": 0.904
+    },
+    {
+      "bbox": {
+        "x1": 0.4029,
+        "x2": 0.4531,
+        "y1": 0.7941,
+        "y2": 0.8482
+      },
+      "confidence": 0.891,
+      "id": "ct-0156",
+      "lat": 32.8415548,
+      "lon": -96.8640183,
+      "secondary_confidence": 1.0,
+      "source_building_id": "0935b95b-cb11-4456-ab79-1c285fcd8daf",
+      "yolo_confidence": 0.891
+    },
+    {
+      "bbox": {
+        "x1": 0.3287,
+        "x2": 0.3517,
+        "y1": 0.7354,
+        "y2": 0.7663
+      },
+      "confidence": 0.727,
+      "id": "ct-0157",
+      "lat": 32.88941,
+      "lon": -96.6706741,
+      "secondary_confidence": 0.727,
+      "source_building_id": "cd2a7277-1fcd-4f36-99bd-73aaec41f8c4",
+      "yolo_confidence": 0.342
+    },
+    {
+      "bbox": {
+        "x1": 0.7729,
+        "x2": 0.8017,
+        "y1": 0.4975,
+        "y2": 0.5161
+      },
+      "confidence": 0.672,
+      "id": "ct-0158",
+      "lat": 32.6994617,
+      "lon": -96.8767871,
+      "secondary_confidence": 1.0,
+      "source_building_id": "970ace50-445c-4c27-86f2-e18917cd3cd5",
+      "yolo_confidence": 0.672
+    },
+    {
+      "bbox": {
+        "x1": 0.2883,
+        "x2": 0.3123,
+        "y1": 0.1665,
+        "y2": 0.1902
+      },
+      "confidence": 0.377,
+      "id": "ct-0159",
+      "lat": 32.6999172,
+      "lon": -96.877623,
+      "secondary_confidence": 0.377,
+      "source_building_id": "970ace50-445c-4c27-86f2-e18917cd3cd5",
+      "yolo_confidence": 0.451
+    },
+    {
+      "bbox": {
+        "x1": 0.584,
+        "x2": 0.6029,
+        "y1": 0.3527,
+        "y2": 0.368
+      },
+      "confidence": 0.497,
+      "id": "ct-0160",
+      "lat": 32.9148996,
+      "lon": -96.8926201,
+      "secondary_confidence": 0.497,
+      "source_building_id": "70951883-0eb2-46a0-9762-1f6b7cbdc057",
+      "yolo_confidence": 0.325
+    },
+    {
+      "bbox": {
+        "x1": 0.0854,
+        "x2": 0.1259,
+        "y1": 0.421,
+        "y2": 0.455
+      },
+      "confidence": 0.877,
+      "id": "ct-0161",
+      "lat": 32.9623896,
+      "lon": -96.8888176,
+      "secondary_confidence": 1.0,
+      "source_building_id": "9a7bf3f3-2d80-444b-b57d-311d495a48cc",
+      "yolo_confidence": 0.877
+    },
+    {
+      "bbox": {
+        "x1": 0.2847,
+        "x2": 0.3287,
+        "y1": 0.2319,
+        "y2": 0.2798
+      },
+      "confidence": 0.91,
+      "id": "ct-0162",
+      "lat": 32.8326205,
+      "lon": -96.82694,
+      "secondary_confidence": 1.0,
+      "source_building_id": "69a488bf-cd96-4aaa-b165-9787c95da52c",
+      "yolo_confidence": 0.91
+    },
+    {
+      "bbox": {
+        "x1": 0.2447,
+        "x2": 0.2879,
+        "y1": 0.2599,
+        "y2": 0.3074
+      },
+      "confidence": 0.904,
+      "id": "ct-0163",
+      "lat": 32.832582,
+      "lon": -96.8270094,
+      "secondary_confidence": 1.0,
+      "source_building_id": "69a488bf-cd96-4aaa-b165-9787c95da52c",
+      "yolo_confidence": 0.904
+    },
+    {
+      "bbox": {
+        "x1": 0.3272,
+        "x2": 0.3685,
+        "y1": 0.2061,
+        "y2": 0.2511
+      },
+      "confidence": 0.9,
+      "id": "ct-0164",
+      "lat": 32.8326582,
+      "lon": -96.8268694,
+      "secondary_confidence": 1.0,
+      "source_building_id": "69a488bf-cd96-4aaa-b165-9787c95da52c",
+      "yolo_confidence": 0.9
+    },
+    {
+      "bbox": {
+        "x1": 0.9312,
+        "x2": 0.9588,
+        "y1": 0.2869,
+        "y2": 0.3191
+      },
+      "confidence": 0.896,
+      "id": "ct-0165",
+      "lat": 32.8325552,
+      "lon": -96.8258443,
+      "secondary_confidence": 0.896,
+      "source_building_id": "69a488bf-cd96-4aaa-b165-9787c95da52c",
+      "yolo_confidence": 0.579
+    },
+    {
+      "bbox": {
+        "x1": 0.7719,
+        "x2": 0.7929,
+        "y1": 0.045,
+        "y2": 0.062
+      },
+      "confidence": 0.555,
+      "id": "ct-0166",
+      "lat": 32.8802856,
+      "lon": -96.6730767,
+      "secondary_confidence": 0.555,
+      "source_building_id": "afc0ae16-6857-4c4c-ae15-926ff4c7dbcf",
+      "yolo_confidence": 0.302
+    },
+    {
+      "bbox": {
+        "x1": 0.7834,
+        "x2": 0.8481,
+        "y1": 0.8109,
+        "y2": 0.865
+      },
+      "confidence": 0.918,
+      "id": "ct-0167",
+      "lat": 32.9992009,
+      "lon": -96.7271394,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.918
+    },
+    {
+      "bbox": {
+        "x1": 0.7724,
+        "x2": 0.8362,
+        "y1": 0.8424,
+        "y2": 0.8953
+      },
+      "confidence": 0.91,
+      "id": "ct-0168",
+      "lat": 32.9991583,
+      "lon": -96.727159,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.91
+    },
+    {
+      "bbox": {
+        "x1": 0.9032,
+        "x2": 0.9699,
+        "y1": 0.7794,
+        "y2": 0.8315
+      },
+      "confidence": 0.899,
+      "id": "ct-0169",
+      "lat": 32.9992458,
+      "lon": -96.726932,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.899
+    },
+    {
+      "bbox": {
+        "x1": 0.8012,
+        "x2": 0.8632,
+        "y1": 0.7687,
+        "y2": 0.8222
+      },
+      "confidence": 0.895,
+      "id": "ct-0170",
+      "lat": 32.9992597,
+      "lon": -96.7271112,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.895
+    },
+    {
+      "bbox": {
+        "x1": 0.8761,
+        "x2": 0.9418,
+        "y1": 0.8504,
+        "y2": 0.9054
+      },
+      "confidence": 0.892,
+      "id": "ct-0171",
+      "lat": 32.9991457,
+      "lon": -96.7269794,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.892
+    },
+    {
+      "bbox": {
+        "x1": 0.8127,
+        "x2": 0.8753,
+        "y1": 0.7385,
+        "y2": 0.7923
+      },
+      "confidence": 0.891,
+      "id": "ct-0172",
+      "lat": 32.9993012,
+      "lon": -96.7270909,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.891
+    },
+    {
+      "bbox": {
+        "x1": 0.8672,
+        "x2": 0.9316,
+        "y1": 0.8813,
+        "y2": 0.9346
+      },
+      "confidence": 0.886,
+      "id": "ct-0173",
+      "lat": 32.9991042,
+      "lon": -96.7269958,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.886
+    },
+    {
+      "bbox": {
+        "x1": 0.8944,
+        "x2": 0.9574,
+        "y1": 0.8098,
+        "y2": 0.863
+      },
+      "confidence": 0.859,
+      "id": "ct-0174",
+      "lat": 32.999203,
+      "lon": -96.7269503,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b57b757-8757-4c43-9529-3144a6962237",
+      "yolo_confidence": 0.859
+    },
+    {
+      "bbox": {
+        "x1": 0.5758,
+        "x2": 0.6142,
+        "y1": 0.4816,
+        "y2": 0.5204
+      },
+      "confidence": 0.864,
+      "id": "ct-0175",
+      "lat": 32.9575043,
+      "lon": -96.6382009,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c529043e-b998-43cb-83d9-0ace8455b815",
+      "yolo_confidence": 0.864
+    },
+    {
+      "bbox": {
+        "x1": 0.6626,
+        "x2": 0.7004,
+        "y1": 0.4419,
+        "y2": 0.4797
+      },
+      "confidence": 0.855,
+      "id": "ct-0176",
+      "lat": 32.9575599,
+      "lon": -96.6380525,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c529043e-b998-43cb-83d9-0ace8455b815",
+      "yolo_confidence": 0.855
+    },
+    {
+      "bbox": {
+        "x1": 0.6488,
+        "x2": 0.6858,
+        "y1": 0.428,
+        "y2": 0.4667
+      },
+      "confidence": 0.849,
+      "id": "ct-0177",
+      "lat": 32.9575785,
+      "lon": -96.6380768,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c529043e-b998-43cb-83d9-0ace8455b815",
+      "yolo_confidence": 0.849
+    },
+    {
+      "bbox": {
+        "x1": 0.5604,
+        "x2": 0.5996,
+        "y1": 0.4662,
+        "y2": 0.5052
+      },
+      "confidence": 0.664,
+      "id": "ct-0178",
+      "lat": 32.9575255,
+      "lon": -96.6382267,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c529043e-b998-43cb-83d9-0ace8455b815",
+      "yolo_confidence": 0.664
+    },
+    {
+      "bbox": {
+        "x1": 0.1861,
+        "x2": 0.2337,
+        "y1": 0.1659,
+        "y2": 0.1999
+      },
+      "confidence": 0.872,
+      "id": "ct-0179",
+      "lat": 32.8632897,
+      "lon": -96.7695305,
+      "secondary_confidence": 1.0,
+      "source_building_id": "75886237-8411-4b9a-873f-363f99662139",
+      "yolo_confidence": 0.872
+    },
+    {
+      "bbox": {
+        "x1": 0.1889,
+        "x2": 0.2365,
+        "y1": 0.1416,
+        "y2": 0.1743
+      },
+      "confidence": 0.845,
+      "id": "ct-0180",
+      "lat": 32.8633243,
+      "lon": -96.7695257,
+      "secondary_confidence": 1.0,
+      "source_building_id": "75886237-8411-4b9a-873f-363f99662139",
+      "yolo_confidence": 0.845
+    },
+    {
+      "bbox": {
+        "x1": 0.7378,
+        "x2": 0.7604,
+        "y1": 0.4245,
+        "y2": 0.4616
+      },
+      "confidence": 0.841,
+      "id": "ct-0181",
+      "lat": 32.8629296,
+      "lon": -96.7686049,
+      "secondary_confidence": 1.0,
+      "source_building_id": "75886237-8411-4b9a-873f-363f99662139",
+      "yolo_confidence": 0.841
+    },
+    {
+      "bbox": {
+        "x1": 0.7548,
+        "x2": 0.7749,
+        "y1": 0.4267,
+        "y2": 0.4636
+      },
+      "confidence": 0.839,
+      "id": "ct-0182",
+      "lat": 32.8629268,
+      "lon": -96.7685779,
+      "secondary_confidence": 1.0,
+      "source_building_id": "75886237-8411-4b9a-873f-363f99662139",
+      "yolo_confidence": 0.839
+    },
+    {
+      "bbox": {
+        "x1": 0.194,
+        "x2": 0.24,
+        "y1": 0.1182,
+        "y2": 0.1507
+      },
+      "confidence": 0.828,
+      "id": "ct-0183",
+      "lat": 32.8633568,
+      "lon": -96.7695183,
+      "secondary_confidence": 1.0,
+      "source_building_id": "75886237-8411-4b9a-873f-363f99662139",
+      "yolo_confidence": 0.828
+    },
+    {
+      "bbox": {
+        "x1": 0.5697,
+        "x2": 0.5975,
+        "y1": 0.5628,
+        "y2": 0.604
+      },
+      "confidence": 0.872,
+      "id": "ct-0184",
+      "lat": 32.975447,
+      "lon": -96.844865,
+      "secondary_confidence": 1.0,
+      "source_building_id": "22acc031-6e3a-4761-b3ba-62ed887ea260",
+      "yolo_confidence": 0.872
+    },
+    {
+      "bbox": {
+        "x1": 0.5913,
+        "x2": 0.6171,
+        "y1": 0.5646,
+        "y2": 0.6041
+      },
+      "confidence": 0.858,
+      "id": "ct-0185",
+      "lat": 32.9754457,
+      "lon": -96.8448298,
+      "secondary_confidence": 1.0,
+      "source_building_id": "22acc031-6e3a-4761-b3ba-62ed887ea260",
+      "yolo_confidence": 0.858
+    },
+    {
+      "bbox": {
+        "x1": 0.7607,
+        "x2": 0.8009,
+        "y1": 0.151,
+        "y2": 0.1793
+      },
+      "confidence": 0.742,
+      "id": "ct-0186",
+      "lat": 32.9159274,
+      "lon": -96.8695818,
+      "secondary_confidence": 1.0,
+      "source_building_id": "21ffdb45-f0b9-42be-9ae5-3a4822ac21ab",
+      "yolo_confidence": 0.742
+    },
+    {
+      "bbox": {
+        "x1": 0.7567,
+        "x2": 0.7971,
+        "y1": 0.1349,
+        "y2": 0.1627
+      },
+      "confidence": 0.732,
+      "id": "ct-0187",
+      "lat": 32.91595,
+      "lon": -96.8695886,
+      "secondary_confidence": 0.732,
+      "source_building_id": "21ffdb45-f0b9-42be-9ae5-3a4822ac21ab",
+      "yolo_confidence": 0.626
+    },
+    {
+      "bbox": {
+        "x1": 0.4425,
+        "x2": 0.4655,
+        "y1": 0.8439,
+        "y2": 0.8633
+      },
+      "confidence": 0.751,
+      "id": "ct-0188",
+      "lat": 32.9324159,
+      "lon": -96.6284754,
+      "secondary_confidence": 1.0,
+      "source_building_id": "2cd5335b-31a8-46ac-afca-7b48c426b5d1",
+      "yolo_confidence": 0.751
+    },
+    {
+      "bbox": {
+        "x1": 0.4289,
+        "x2": 0.4478,
+        "y1": 0.844,
+        "y2": 0.861
+      },
+      "confidence": 0.68,
+      "id": "ct-0189",
+      "lat": 32.9324175,
+      "lon": -96.6285023,
+      "secondary_confidence": 0.68,
+      "source_building_id": "2cd5335b-31a8-46ac-afca-7b48c426b5d1",
+      "yolo_confidence": 0.441
+    },
+    {
+      "bbox": {
+        "x1": 0.9037,
+        "x2": 0.9251,
+        "y1": 0.5506,
+        "y2": 0.5681
+      },
+      "confidence": 0.747,
+      "id": "ct-0190",
+      "lat": 32.9988388,
+      "lon": -96.5640761,
+      "secondary_confidence": 0.747,
+      "source_building_id": "92830241-e5fb-41c3-88eb-82920c886157",
+      "yolo_confidence": 0.342
+    },
+    {
+      "bbox": {
+        "x1": 0.5236,
+        "x2": 0.5425,
+        "y1": 0.3829,
+        "y2": 0.4093
+      },
+      "confidence": 0.8,
+      "id": "ct-0191",
+      "lat": 32.9655803,
+      "lon": -96.7129389,
+      "secondary_confidence": 0.8,
+      "source_building_id": "1e5491d3-255c-403a-a348-2adb3846cd7d",
+      "yolo_confidence": 0.415
+    },
+    {
+      "bbox": {
+        "x1": 0.5084,
+        "x2": 0.5301,
+        "y1": 0.3831,
+        "y2": 0.4087
+      },
+      "confidence": 0.76,
+      "id": "ct-0192",
+      "lat": 32.9655806,
+      "lon": -96.7129626,
+      "secondary_confidence": 0.76,
+      "source_building_id": "1e5491d3-255c-403a-a348-2adb3846cd7d",
+      "yolo_confidence": 0.343
+    },
+    {
+      "bbox": {
+        "x1": 0.4819,
+        "x2": 0.5087,
+        "y1": 0.3818,
+        "y2": 0.4092
+      },
+      "confidence": 0.752,
+      "id": "ct-0193",
+      "lat": 32.9655811,
+      "lon": -96.7130037,
+      "secondary_confidence": 0.752,
+      "source_building_id": "1e5491d3-255c-403a-a348-2adb3846cd7d",
+      "yolo_confidence": 0.286
+    },
+    {
+      "bbox": {
+        "x1": 0.2296,
+        "x2": 0.2478,
+        "y1": 0.2217,
+        "y2": 0.2344
+      },
+      "confidence": 0.592,
+      "id": "ct-0194",
+      "lat": 32.6928616,
+      "lon": -96.8293828,
+      "secondary_confidence": 0.592,
+      "source_building_id": "87eda5b9-f8e7-476a-8a61-484735ea674f",
+      "yolo_confidence": 0.37
+    },
+    {
+      "bbox": {
+        "x1": 0.3102,
+        "x2": 0.3361,
+        "y1": 0.4734,
+        "y2": 0.5186
+      },
+      "confidence": 0.871,
+      "id": "ct-0195",
+      "lat": 32.9179382,
+      "lon": -96.8201989,
+      "secondary_confidence": 1.0,
+      "source_building_id": "a9e47158-89fe-41d9-9f8a-c9603782874a",
+      "yolo_confidence": 0.871
+    },
+    {
+      "bbox": {
+        "x1": 0.2075,
+        "x2": 0.2315,
+        "y1": 0.6885,
+        "y2": 0.7085
+      },
+      "confidence": 0.483,
+      "id": "ct-0196",
+      "lat": 32.917658,
+      "lon": -96.8203768,
+      "secondary_confidence": 0.483,
+      "source_building_id": "a9e47158-89fe-41d9-9f8a-c9603782874a",
+      "yolo_confidence": 0.543
+    },
+    {
+      "bbox": {
+        "x1": 0.8933,
+        "x2": 0.9154,
+        "y1": 0.1524,
+        "y2": 0.1676
+      },
+      "confidence": 0.601,
+      "id": "ct-0197",
+      "lat": 32.6165787,
+      "lon": -96.743372,
+      "secondary_confidence": 0.601,
+      "source_building_id": "ee7391a3-7417-4890-9995-3df236fd3b1c",
+      "yolo_confidence": 0.4
+    },
+    {
+      "bbox": {
+        "x1": 0.8784,
+        "x2": 0.8985,
+        "y1": 0.153,
+        "y2": 0.1679
+      },
+      "confidence": 0.556,
+      "id": "ct-0198",
+      "lat": 32.6165781,
+      "lon": -96.7433993,
+      "secondary_confidence": 0.556,
+      "source_building_id": "ee7391a3-7417-4890-9995-3df236fd3b1c",
+      "yolo_confidence": 0.265
+    },
+    {
+      "bbox": {
+        "x1": 0.2888,
+        "x2": 0.3087,
+        "y1": 0.6372,
+        "y2": 0.6602
+      },
+      "confidence": 0.726,
+      "id": "ct-0199",
+      "lat": 32.868332,
+      "lon": -96.76818,
+      "secondary_confidence": 1.0,
+      "source_building_id": "8884e16b-e48b-4017-893e-f2e3a21de6a0",
+      "yolo_confidence": 0.726
+    },
+    {
+      "bbox": {
+        "x1": 0.2854,
+        "x2": 0.3064,
+        "y1": 0.2631,
+        "y2": 0.2902
+      },
+      "confidence": 0.71,
+      "id": "ct-0200",
+      "lat": 32.8475035,
+      "lon": -96.8082219,
+      "secondary_confidence": 1.0,
+      "source_building_id": "524e8cf1-3c32-4afe-83b9-5afa68578371",
+      "yolo_confidence": 0.71
+    },
+    {
+      "bbox": {
+        "x1": 0.3029,
+        "x2": 0.3239,
+        "y1": 0.2621,
+        "y2": 0.29
+      },
+      "confidence": 0.679,
+      "id": "ct-0201",
+      "lat": 32.8475043,
+      "lon": -96.8081919,
+      "secondary_confidence": 1.0,
+      "source_building_id": "524e8cf1-3c32-4afe-83b9-5afa68578371",
+      "yolo_confidence": 0.679
+    },
+    {
+      "bbox": {
+        "x1": 0.149,
+        "x2": 0.1743,
+        "y1": 0.8699,
+        "y2": 0.8957
+      },
+      "confidence": 0.73,
+      "id": "ct-0202",
+      "lat": 32.7646133,
+      "lon": -96.7855578,
+      "secondary_confidence": 1.0,
+      "source_building_id": "f3d0f821-5811-467d-8a31-acaedc354b92",
+      "yolo_confidence": 0.73
+    },
+    {
+      "bbox": {
+        "x1": 0.1261,
+        "x2": 0.1496,
+        "y1": 0.8558,
+        "y2": 0.8801
+      },
+      "confidence": 0.45,
+      "id": "ct-0203",
+      "lat": 32.7646339,
+      "lon": -96.7855986,
+      "secondary_confidence": 0.45,
+      "source_building_id": "f3d0f821-5811-467d-8a31-acaedc354b92",
+      "yolo_confidence": 0.483
+    },
+    {
+      "bbox": {
+        "x1": 0.1276,
+        "x2": 0.1488,
+        "y1": 0.7937,
+        "y2": 0.8143
+      },
+      "confidence": 0.743,
+      "id": "ct-0204",
+      "lat": 32.8276446,
+      "lon": -96.8421168,
+      "secondary_confidence": 1.0,
+      "source_building_id": "694ebf21-ec9c-4d9e-9eae-85df295628d2",
+      "yolo_confidence": 0.743
+    },
+    {
+      "bbox": {
+        "x1": 0.1358,
+        "x2": 0.1582,
+        "y1": 0.7783,
+        "y2": 0.8007
+      },
+      "confidence": 0.681,
+      "id": "ct-0205",
+      "lat": 32.8276646,
+      "lon": -96.8421017,
+      "secondary_confidence": 1.0,
+      "source_building_id": "694ebf21-ec9c-4d9e-9eae-85df295628d2",
+      "yolo_confidence": 0.681
+    },
+    {
+      "bbox": {
+        "x1": 0.693,
+        "x2": 0.7159,
+        "y1": 0.7711,
+        "y2": 0.811
+      },
+      "confidence": 0.851,
+      "id": "ct-0206",
+      "lat": 32.7607942,
+      "lon": -96.635679,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c06b95ce-8a73-457c-b2e1-81e0a4427dd9",
+      "yolo_confidence": 0.851
+    },
+    {
+      "bbox": {
+        "x1": 0.6767,
+        "x2": 0.6976,
+        "y1": 0.7707,
+        "y2": 0.8103
+      },
+      "confidence": 0.816,
+      "id": "ct-0207",
+      "lat": 32.7607949,
+      "lon": -96.6357087,
+      "secondary_confidence": 1.0,
+      "source_building_id": "c06b95ce-8a73-457c-b2e1-81e0a4427dd9",
+      "yolo_confidence": 0.816
+    },
+    {
+      "bbox": {
+        "x1": 0.7617,
+        "x2": 0.7796,
+        "y1": 0.0613,
+        "y2": 0.0793
+      },
+      "confidence": 0.726,
+      "id": "ct-0208",
+      "lat": 32.8106546,
+      "lon": -96.8782159,
+      "secondary_confidence": 0.726,
+      "source_building_id": "0eb0d20e-926c-4dca-bd63-1b727c032be6",
+      "yolo_confidence": 0.463
+    },
+    {
+      "bbox": {
+        "x1": 0.1617,
+        "x2": 0.2021,
+        "y1": 0.7612,
+        "y2": 0.8089
+      },
+      "confidence": 0.831,
+      "id": "ct-0209",
+      "lat": 32.774824,
+      "lon": -96.8045854,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4f4b1268-1c28-495e-b601-056329c49d92",
+      "yolo_confidence": 0.831
+    },
+    {
+      "bbox": {
+        "x1": 0.1403,
+        "x2": 0.1795,
+        "y1": 0.6852,
+        "y2": 0.7299
+      },
+      "confidence": 0.825,
+      "id": "ct-0210",
+      "lat": 32.7749313,
+      "lon": -96.8046233,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4f4b1268-1c28-495e-b601-056329c49d92",
+      "yolo_confidence": 0.825
+    },
+    {
+      "bbox": {
+        "x1": 0.1513,
+        "x2": 0.1902,
+        "y1": 0.7227,
+        "y2": 0.7674
+      },
+      "confidence": 0.741,
+      "id": "ct-0211",
+      "lat": 32.7748793,
+      "lon": -96.8046046,
+      "secondary_confidence": 1.0,
+      "source_building_id": "4f4b1268-1c28-495e-b601-056329c49d92",
+      "yolo_confidence": 0.741
+    },
+    {
+      "bbox": {
+        "x1": 0.3868,
+        "x2": 0.4271,
+        "y1": 0.454,
+        "y2": 0.4775
+      },
+      "confidence": 0.894,
+      "id": "ct-0212",
+      "lat": 32.808547,
+      "lon": -96.6292282,
+      "secondary_confidence": 1.0,
+      "source_building_id": "eeeaa992-26f5-41e5-9770-de241256b6b9",
+      "yolo_confidence": 0.894
+    },
+    {
+      "bbox": {
+        "x1": 0.3853,
+        "x2": 0.4258,
+        "y1": 0.4361,
+        "y2": 0.4595
+      },
+      "confidence": 0.828,
+      "id": "ct-0213",
+      "lat": 32.8085718,
+      "lon": -96.6292306,
+      "secondary_confidence": 1.0,
+      "source_building_id": "eeeaa992-26f5-41e5-9770-de241256b6b9",
+      "yolo_confidence": 0.828
+    },
+    {
+      "bbox": {
+        "x1": 0.7662,
+        "x2": 0.7995,
+        "y1": 0.3094,
+        "y2": 0.3442
+      },
+      "confidence": 0.972,
+      "id": "ct-0214",
+      "lat": 32.7716872,
+      "lon": -96.8065209,
+      "secondary_confidence": 0.972,
+      "source_building_id": "ce153b84-716d-4e93-897a-f350b2dac169",
+      "yolo_confidence": 0.319
+    },
+    {
+      "bbox": {
+        "x1": 0.7901,
+        "x2": 0.8034,
+        "y1": 0.0197,
+        "y2": 0.0377
+      },
+      "confidence": 0.51,
+      "id": "ct-0215",
+      "lat": 32.9479928,
+      "lon": -96.8344072,
+      "secondary_confidence": 0.51,
+      "source_building_id": "e96559b9-858e-408b-83e8-becaad852dfe",
+      "yolo_confidence": 0.568
+    },
+    {
+      "bbox": {
+        "x1": 0.7746,
+        "x2": 0.7889,
+        "y1": 0.0194,
+        "y2": 0.0367
+      },
+      "confidence": 0.405,
+      "id": "ct-0216",
+      "lat": 32.9479938,
+      "lon": -96.834433,
+      "secondary_confidence": 0.405,
+      "source_building_id": "e96559b9-858e-408b-83e8-becaad852dfe",
+      "yolo_confidence": 0.425
+    },
+    {
+      "bbox": {
+        "x1": 0.6043,
+        "x2": 0.6461,
+        "y1": 0.9585,
+        "y2": 0.9864
+      },
+      "confidence": 0.688,
+      "id": "ct-0217",
+      "lat": 32.8065636,
+      "lon": -96.6092309,
+      "secondary_confidence": 1.0,
+      "source_building_id": "139f0da7-3ca5-4dcf-9d59-123dedde14b5",
+      "yolo_confidence": 0.688
+    },
+    {
+      "bbox": {
+        "x1": 0.6032,
+        "x2": 0.6472,
+        "y1": 0.9385,
+        "y2": 0.962
+      },
+      "confidence": 0.452,
+      "id": "ct-0218",
+      "lat": 32.8065943,
+      "lon": -96.6092309,
+      "secondary_confidence": 0.452,
+      "source_building_id": "139f0da7-3ca5-4dcf-9d59-123dedde14b5",
+      "yolo_confidence": 0.507
+    },
+    {
+      "bbox": {
+        "x1": 0.2558,
+        "x2": 0.2914,
+        "y1": 0.693,
+        "y2": 0.7117
+      },
+      "confidence": 0.679,
+      "id": "ct-0219",
+      "lat": 32.6368446,
+      "lon": -96.8052952,
+      "secondary_confidence": 1.0,
+      "source_building_id": "1dfee15c-e299-406d-afe0-043dc39d3475",
+      "yolo_confidence": 0.679
+    },
+    {
+      "bbox": {
+        "x1": 0.2568,
+        "x2": 0.2918,
+        "y1": 0.6743,
+        "y2": 0.6925
+      },
+      "confidence": 0.675,
+      "id": "ct-0220",
+      "lat": 32.6368709,
+      "lon": -96.8052939,
+      "secondary_confidence": 0.675,
+      "source_building_id": "1dfee15c-e299-406d-afe0-043dc39d3475",
+      "yolo_confidence": 0.46
+    },
+    {
+      "bbox": {
+        "x1": 0.984,
+        "x2": 1.0,
+        "y1": 0.1627,
+        "y2": 0.1911
+      },
+      "confidence": 0.515,
+      "id": "ct-0221",
+      "lat": 32.7867775,
+      "lon": -96.5780061,
+      "secondary_confidence": 0.515,
+      "source_building_id": "7ad00a58-7a2f-41f3-92c9-55aec7a2ffa7",
+      "yolo_confidence": 0.368
+    },
+    {
+      "bbox": {
+        "x1": 0.6605,
+        "x2": 0.682,
+        "y1": 0.5781,
+        "y2": 0.5979
+      },
+      "confidence": 0.617,
+      "id": "ct-0222",
+      "lat": 32.8322062,
+      "lon": -96.8294542,
+      "secondary_confidence": 0.617,
+      "source_building_id": "78d44626-1f37-461f-9bcf-b2d94b4f6cd0",
+      "yolo_confidence": 0.622
+    },
+    {
+      "bbox": {
+        "x1": 0.6568,
+        "x2": 0.6777,
+        "y1": 0.5726,
+        "y2": 0.5935
+      },
+      "confidence": 0.622,
+      "id": "ct-0223",
+      "lat": 32.8322131,
+      "lon": -96.829461,
+      "secondary_confidence": 0.622,
+      "source_building_id": "78d44626-1f37-461f-9bcf-b2d94b4f6cd0",
+      "yolo_confidence": 0.256
+    },
+    {
+      "bbox": {
+        "x1": 0.2516,
+        "x2": 0.285,
+        "y1": 0.9537,
+        "y2": 0.9985
+      },
+      "confidence": 0.876,
+      "id": "ct-0224",
+      "lat": 32.7891543,
+      "lon": -96.6214128,
+      "secondary_confidence": 1.0,
+      "source_building_id": "2eabc6f4-bdbf-48f9-90ef-67aaba8f629c",
+      "yolo_confidence": 0.876
+    },
+    {
+      "bbox": {
+        "x1": 0.2268,
+        "x2": 0.2596,
+        "y1": 0.9533,
+        "y2": 0.9977
+      },
+      "confidence": 0.826,
+      "id": "ct-0225",
+      "lat": 32.7891552,
+      "lon": -96.6214559,
+      "secondary_confidence": 1.0,
+      "source_building_id": "2eabc6f4-bdbf-48f9-90ef-67aaba8f629c",
+      "yolo_confidence": 0.826
+    },
+    {
+      "bbox": {
+        "x1": 0.8773,
+        "x2": 0.9223,
+        "y1": 0.6572,
+        "y2": 0.6946
+      },
+      "confidence": 0.894,
+      "id": "ct-0226",
+      "lat": 32.834288,
+      "lon": -96.7050239,
+      "secondary_confidence": 1.0,
+      "source_building_id": "d834b490-10ac-4547-90b6-caee2efb4c1d",
+      "yolo_confidence": 0.894
+    },
+    {
+      "bbox": {
+        "x1": 0.8857,
+        "x2": 0.9302,
+        "y1": 0.6786,
+        "y2": 0.7174
+      },
+      "confidence": 0.882,
+      "id": "ct-0227",
+      "lat": 32.8342574,
+      "lon": -96.7050098,
+      "secondary_confidence": 1.0,
+      "source_building_id": "d834b490-10ac-4547-90b6-caee2efb4c1d",
+      "yolo_confidence": 0.882
+    },
+    {
+      "bbox": {
+        "x1": 0.2033,
+        "x2": 0.2269,
+        "y1": 0.0132,
+        "y2": 0.0382
+      },
+      "confidence": 0.747,
+      "id": "ct-0228",
+      "lat": 32.8836571,
+      "lon": -96.7861288,
+      "secondary_confidence": 1.0,
+      "source_building_id": "667dda42-337e-47a6-a7dc-990958c4df06",
+      "yolo_confidence": 0.747
+    },
+    {
+      "bbox": {
+        "x1": 0.1871,
+        "x2": 0.2103,
+        "y1": 0.0139,
+        "y2": 0.0387
+      },
+      "confidence": 0.711,
+      "id": "ct-0229",
+      "lat": 32.8836563,
+      "lon": -96.7861571,
+      "secondary_confidence": 1.0,
+      "source_building_id": "667dda42-337e-47a6-a7dc-990958c4df06",
+      "yolo_confidence": 0.711
+    },
+    {
+      "bbox": {
+        "x1": 0.3826,
+        "x2": 0.4025,
+        "y1": 0.8658,
+        "y2": 0.8861
+      },
+      "confidence": 0.534,
+      "id": "ct-0230",
+      "lat": 32.7168361,
+      "lon": -96.8667411,
+      "secondary_confidence": 0.534,
+      "source_building_id": "733a3937-cb51-49a9-9d1a-a5d686383678",
+      "yolo_confidence": 0.468
+    },
+    {
+      "bbox": {
+        "x1": 0.8269,
+        "x2": 0.8599,
+        "y1": 0.4701,
+        "y2": 0.5024
+      },
+      "confidence": 0.874,
+      "id": "ct-0231",
+      "lat": 32.7038117,
+      "lon": -96.82358,
+      "secondary_confidence": 1.0,
+      "source_building_id": "2faba439-de72-4704-a283-28735f7cdf9a",
+      "yolo_confidence": 0.874
+    },
+    {
+      "bbox": {
+        "x1": 0.8274,
+        "x2": 0.859,
+        "y1": 0.4448,
+        "y2": 0.4751
+      },
+      "confidence": 0.863,
+      "id": "ct-0232",
+      "lat": 32.7038481,
+      "lon": -96.8235802,
+      "secondary_confidence": 1.0,
+      "source_building_id": "2faba439-de72-4704-a283-28735f7cdf9a",
+      "yolo_confidence": 0.863
+    },
+    {
+      "bbox": {
+        "x1": 0.2104,
+        "x2": 0.2281,
+        "y1": 0.0139,
+        "y2": 0.0406
+      },
+      "confidence": 0.774,
+      "id": "ct-0233",
+      "lat": 32.7003132,
+      "lon": -96.8160022,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6a528e38-2ce6-40a1-b12b-7cd63f622774",
+      "yolo_confidence": 0.774
+    },
+    {
+      "bbox": {
+        "x1": 0.2012,
+        "x2": 0.2163,
+        "y1": 0.0132,
+        "y2": 0.0398
+      },
+      "confidence": 0.602,
+      "id": "ct-0234",
+      "lat": 32.7003143,
+      "lon": -96.8160203,
+      "secondary_confidence": 0.602,
+      "source_building_id": "6a528e38-2ce6-40a1-b12b-7cd63f622774",
+      "yolo_confidence": 0.626
+    },
+    {
+      "bbox": {
+        "x1": 0.6203,
+        "x2": 0.6361,
+        "y1": 0.6014,
+        "y2": 0.6294
+      },
+      "confidence": 0.396,
+      "id": "ct-0235",
+      "lat": 32.6836967,
+      "lon": -96.824953,
+      "secondary_confidence": 0.396,
+      "source_building_id": "ba21d206-fd15-40d6-af48-b33775c11a6e",
+      "yolo_confidence": 0.473
+    },
+    {
+      "bbox": {
+        "x1": 0.3162,
+        "x2": 0.3722,
+        "y1": 0.7596,
+        "y2": 0.8061
+      },
+      "confidence": 0.754,
+      "id": "ct-0236",
+      "lat": 32.7916769,
+      "lon": -96.8009681,
+      "secondary_confidence": 1.0,
+      "source_building_id": "af63e34a-4216-4e0a-99be-2a4c6e1a46fb",
+      "yolo_confidence": 0.754
+    },
+    {
+      "bbox": {
+        "x1": 0.3013,
+        "x2": 0.355,
+        "y1": 0.7333,
+        "y2": 0.7808
+      },
+      "confidence": 0.866,
+      "id": "ct-0237",
+      "lat": 32.7917126,
+      "lon": -96.8009957,
+      "secondary_confidence": 0.866,
+      "source_building_id": "af63e34a-4216-4e0a-99be-2a4c6e1a46fb",
+      "yolo_confidence": 0.642
+    },
+    {
+      "bbox": {
+        "x1": 0.6927,
+        "x2": 0.7132,
+        "y1": 0.4246,
+        "y2": 0.4404
+      },
+      "confidence": 0.41,
+      "id": "ct-0238",
+      "lat": 32.6294502,
+      "lon": -96.7475053,
+      "secondary_confidence": 0.41,
+      "source_building_id": "941a2330-b7e8-44c1-9bab-2d6a39813b8b",
+      "yolo_confidence": 0.25
+    },
+    {
+      "bbox": {
+        "x1": 0.4562,
+        "x2": 0.4805,
+        "y1": 0.8244,
+        "y2": 0.8489
+      },
+      "confidence": 0.693,
+      "id": "ct-0239",
+      "lat": 32.888205,
+      "lon": -96.6959498,
+      "secondary_confidence": 1.0,
+      "source_building_id": "bf061f72-1f4a-44fa-8c2d-d7c0082f06d0",
+      "yolo_confidence": 0.693
+    },
+    {
+      "bbox": {
+        "x1": 0.4794,
+        "x2": 0.4981,
+        "y1": 0.8259,
+        "y2": 0.8483
+      },
+      "confidence": 0.595,
+      "id": "ct-0240",
+      "lat": 32.8882044,
+      "lon": -96.6959149,
+      "secondary_confidence": 0.595,
+      "source_building_id": "bf061f72-1f4a-44fa-8c2d-d7c0082f06d0",
+      "yolo_confidence": 0.409
+    },
+    {
+      "bbox": {
+        "x1": 0.1971,
+        "x2": 0.2167,
+        "y1": 0.677,
+        "y2": 0.7096
+      },
+      "confidence": 0.402,
+      "id": "ct-0241",
+      "lat": 32.7563494,
+      "lon": -96.5940503,
+      "secondary_confidence": 0.402,
+      "source_building_id": "311f70f6-92de-49ea-be1a-6805ba43cd33",
+      "yolo_confidence": 0.503
+    },
+    {
+      "bbox": {
+        "x1": 0.2121,
+        "x2": 0.2311,
+        "y1": 0.6757,
+        "y2": 0.7111
+      },
+      "confidence": 0.747,
+      "id": "ct-0242",
+      "lat": 32.7563492,
+      "lon": -96.594025,
+      "secondary_confidence": 0.747,
+      "source_building_id": "311f70f6-92de-49ea-be1a-6805ba43cd33",
+      "yolo_confidence": 0.385
+    },
+    {
+      "bbox": {
+        "x1": 0.2716,
+        "x2": 0.2977,
+        "y1": 0.3193,
+        "y2": 0.341
+      },
+      "confidence": 0.462,
+      "id": "ct-0243",
+      "lat": 32.9918475,
+      "lon": -96.5747633,
+      "secondary_confidence": 0.462,
+      "source_building_id": "336fd75d-e197-4a77-9633-11bcec3a4df6",
+      "yolo_confidence": 0.618
+    },
+    {
+      "bbox": {
+        "x1": 0.2812,
+        "x2": 0.3083,
+        "y1": 0.3337,
+        "y2": 0.3561
+      },
+      "confidence": 0.646,
+      "id": "ct-0244",
+      "lat": 32.9918271,
+      "lon": -96.574746,
+      "secondary_confidence": 0.646,
+      "source_building_id": "336fd75d-e197-4a77-9633-11bcec3a4df6",
+      "yolo_confidence": 0.459
+    },
+    {
+      "bbox": {
+        "x1": 0.2054,
+        "x2": 0.2373,
+        "y1": 0.1132,
+        "y2": 0.1402
+      },
+      "confidence": 0.698,
+      "id": "ct-0245",
+      "lat": 32.9082244,
+      "lon": -96.8844676,
+      "secondary_confidence": 1.0,
+      "source_building_id": "bdaadbeb-2af8-4c00-9dc5-8e93b57aadfc",
+      "yolo_confidence": 0.698
+    },
+    {
+      "bbox": {
+        "x1": 0.856,
+        "x2": 0.8886,
+        "y1": 0.488,
+        "y2": 0.5218
+      },
+      "confidence": 0.853,
+      "id": "ct-0246",
+      "lat": 32.8182887,
+      "lon": -96.6136847,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b97a073-cb5c-47f8-b9bc-52d24aba33bd",
+      "yolo_confidence": 0.853
+    },
+    {
+      "bbox": {
+        "x1": 0.8684,
+        "x2": 0.9048,
+        "y1": 0.5012,
+        "y2": 0.5364
+      },
+      "confidence": 0.843,
+      "id": "ct-0247",
+      "lat": 32.8182695,
+      "lon": -96.6136602,
+      "secondary_confidence": 1.0,
+      "source_building_id": "6b97a073-cb5c-47f8-b9bc-52d24aba33bd",
+      "yolo_confidence": 0.843
+    }
+  ],
+  "phoenix": [],
+  "miami": [],
+  "philadelphia": [],
+  "austin": [],
+  "tyler": [],
+  "denver": [],
+  "atlanta": [],
+  "seattle": [],
+  "los_angeles": []
+}

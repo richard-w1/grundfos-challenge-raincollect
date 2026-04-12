@@ -1,0 +1,27 @@
+{
+  "dallas": {
+    "avg_precip_inches": 37.0,
+    "water_cost_per_kgal": 4.1,
+    "gallons_per_sqft_per_year": 23.051
+  },
+  "phoenix": {
+    "avg_precip_inches": 8.0,
+    "water_cost_per_kgal": 3.2,
+    "gallons_per_sqft_per_year": 4.984
+  },
+  "miami": {
+    "avg_precip_inches": 62.0,
+    "water_cost_per_kgal": 5.8,
+    "gallons_per_sqft_per_year": 38.626
+  },
+  "philadelphia": {
+    "avg_precip_inches": 46.0,
+    "water_cost_per_kgal": 8.9,
+    "gallons_per_sqft_per_year": 28.658
+  },
+  "austin": {
+    "avg_precip_inches": 34.0,
+    "water_cost_per_kgal": 5.5,
+    "gallons_per_sqft_per_year": 21.182
+  }
+}

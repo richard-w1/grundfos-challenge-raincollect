@@ -1,0 +1,49 @@
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Model weights (too large for git — store separately)
+*.pt
+*.pth
+*.ckpt
+
+# Large intermediate data files
+*_raw.json
+*_large.geojson
+*.geojson.state
+
+# Node
+node_modules/
+dist/
+.next/
+.nuxt/
+
+# Build artifacts
+build/
+*.egg-info/
+dist/
+
+# Backup files
+*.bak
+*.orig
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Cursor
+.cursor/
