@@ -15,19 +15,6 @@ Built for the Grundfos Challenge.
 
 ---
 
-## Project structure
-
-```
-rainuse-nexus/        RainCollect web app (Vite)
-tower_server.py       TowerScout CV microservice (Flask)
-generate_dallas_towers.py   Runs the CV pipeline against Dallas buildings
-towerscout_train.py   YOLOv5 training script (Colab)
-scripts/              Data enrichment and fetch utilities
-docs/                 Planning docs, tech stack notes, TowerScout paper
-```
-
----
-
 ## Tech stack
 
 **Frontend**
