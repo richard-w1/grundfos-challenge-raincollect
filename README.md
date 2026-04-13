@@ -8,7 +8,6 @@ Built for the Grundfos Challenge.
 
 ## What it does
 
-- Loads pre-enriched building data for 10 US cities
 - Scores each building on roof area, local water cost, precipitation, stormwater fees, ESG commitments, tax incentives, and flood risk
 - Detects cooling towers in satellite imagery using a two-stage computer vision pipeline (YOLOv5 + EfficientNet-B5), rendered as precise map markers
 - Lets you run a live audit on any city and filter/explore results in an interactive map
@@ -47,29 +46,7 @@ npm install
 npm run dev
 ```
 
-The app runs on `http://localhost:5173`. Pre-baked data for all 10 cities loads automatically — no server needed for basic use.
-
----
-
-## Running the CV microservice
-
-Required for live cooling tower detection during custom audits.
-
 ```bash
 pip install -r requirements_towerscout.txt
 python tower_server.py --yolo-weights yolov5_best.pt --en-weights b5_unweighted_best.pt
 ```
-
-Model weights are not included in the repo (too large). Place them in the project root before starting.
-
----
-
-## Environment variables
-
-Create a `.env` file in the project root:
-
-```
-GOOGLE_MAPS_API_KEY=your_key_here
-```
-
-Required for satellite tile fetching during live audits and data generation.
