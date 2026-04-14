@@ -50,3 +50,13 @@ npm run dev
 pip install -r requirements_towerscout.txt
 python tower_server.py --yolo-weights yolov5_best.pt --en-weights b5_unweighted_best.pt
 ```
+
+## References
+
+Based on “Automated cooling tower detection through deep learning for Legionnaires’ disease outbreak investigations” (Wong et al., 2024, The Lancet Digital Health).
+
+- Methodology adapted from the [TowerScout](https://github.com/TowerScout/TowerScout) project (UC Berkeley / CDC).
+- EfficientNet pretrained weights used.
+- YOLOv5 model retrained using reconstructed pipeline and partial dataset.
+
+Original work licensed under CC BY-NC-SA 4.0.
