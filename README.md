@@ -4,32 +4,33 @@ A commercial building prospecting engine for Grundfos water reuse systems. The a
 
 Built for the Grundfos sponsor track at HackSMU VII. [Devpost](https://devpost.com/software/rain-pr9y7j)
 
-<img width="790" height="573" alt="image" src="https://github.com/user-attachments/assets/5ae2fbaf-2d43-4b7e-88e7-615853ddfbdf" />
-<img width="806" height="386" alt="image" src="https://github.com/user-attachments/assets/2e9667d1-f0da-4dbc-8a2c-ee11537fc629" />
+<img width="1932" height="818" alt="image" src="https://github.com/user-attachments/assets/ef376a33-504c-499e-af55-5ae6af1d5036" />
+<em>Interactive map with marked buildings of interest and water cooling towers. Area information data sources and heuristics.</em>
+<br>
+<br>
+<img src="https://github.com/user-attachments/assets/3157c671-34f2-4059-aff7-06f7c52d9876">
+<br>
+<em>Water cooling tower detection on satellite imagery via Google Maps Static.</em>
 
 ---
 
 ## What it does
 
+- Lets you run a live audit on any city and filter/explore/save results in an interactive map
 - Scores each building on roof area, local water cost, precipitation, stormwater fees, ESG commitments, tax incentives, and flood risk
-- Detects cooling towers in satellite imagery using a two-stage computer vision pipeline (YOLOv5 + EfficientNet-B5), rendered as precise map markers
-- Lets you run a live audit on any city and filter/explore results in an interactive map
+- Detects cooling towers in satellite imagery using a two-stage computer vision pipeline rendered as precise map markers
 
 ---
 
-## Tech stack
+## Built with
 
 **Frontend**
-- React + Vite
-- MapLibre GL — base map rendering
-- Deck.gl — building footprint and cooling tower layers
-- Zustand — state management
-- Mantine — UI components
 
-**CV microservice**
-- YOLOv5 — detects cooling tower bounding boxes in satellite tiles
-- EfficientNet-B5 — confirms detections at intermediate confidence
-- PyTorch, Flask
+React (Vite), MapLibre GL, Deck.gl, Zustand, Mantine
+
+**ML / CV microservice**
+
+YOLOv5, EfficientNet-B5, PyTorch, Flask
 
 **Data**
 - Microsoft Overture Maps — building footprints and attributes
